@@ -1,13 +1,29 @@
-<div id="main-container">
-  <h1 id="zutomayo-eng"></h1>
+<svelte:head>
+  <title>ZTMY</title>
+</svelte:head>
+
+<script>
+  import ConcertsList from '../lib/ConcertsList.svelte';
+</script>
+
+<div class="main-container">
+  <div class="title-container">
+    <div id="zutomayo-title" aria-label="ZUTOMAYO / ずっと真夜中でいいのに"></div>
+  </div>
+  <ConcertsList/>
 </div>
 
 <style>
-  #main-container {
-    width: 60%;
+  .main-container {
+    width: 62%;
     margin: auto;
-    margin-top: 25vh;
+    margin-top: 24vh;
     text-align: center;
+  }
+
+  .title-container {
+    height: 0px;
+    margin-bottom: 150px;
   }
 
   @keyframes slidedown {
@@ -27,9 +43,10 @@
       transform: translate(0px, 50px);
       opacity: 0;
     }
-   }
+  }
 
-  #zutomayo-eng {
+  #zutomayo-title {
+    font-size: 2.5em;
     animation-name: slidedown;
     animation-duration: 3s;
     animation-direction: alternate;
@@ -55,13 +72,23 @@
     100% {
       content: "ZUTOMAYO";
     }
-   }
+  }
 
-  #zutomayo-eng::after {
+  #zutomayo-title::after {
     content: "ZUTOMAYO";
     animation-name: changecontent;
     animation-duration: 12s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(1, jump-none);
+  }
+
+  @media screen and (max-width: 1000px) {
+    #zutomayo-title {
+      font-size: 2em;
+    }
+
+    .main-container {
+      width: 76%;
+      margin-top: 14vh;
+    }
   }
 </style>
