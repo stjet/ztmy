@@ -2,7 +2,7 @@
   <title>ZTMY</title>
 </svelte:head>
 
-<script>
+<script lang="ts">
   import ConcertsList from '../lib/ConcertsList.svelte';
 </script>
 

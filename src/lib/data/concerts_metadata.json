@@ -1,19 +1,39 @@
 {
   "concerts": [
     {
-      "title": "CLEANING LABO「温れ落ち度」",
+      "title": "CLEANING LABO",
+      "slug": "cleaning-labo",
+      "subtitle": "「温れ落ち度」",
       "thumbnail_url": ""
     },
     {
-      "title": "ZUTOMAYO FACTORY「鷹は飢えても踊り忘れず」 [day1 “memory_limit = -1” ]",
+      "title": "ZUTOMAYO FACTORY [day1 “memory_limit = -1” ]",
+      "slug": "zutomayo-factory-day1",
+      "subtitle": "「鷹は飢えても踊り忘れず」",
       "thumbnail_url": ""
     },
     {
-      "title": "ZUTOMAYO FACTORY「鷹は飢えても踊り忘れず」 [day2 “ob_start” ]",
+      "title": "ZUTOMAYO FACTORY [day2 “ob_start” ]",
+      "slug": "zutomayo-factory-day2",
+      "subtitle": "「鷹は飢えても踊り忘れず」",
       "thumbnail_url": ""
     },
     {
       "title": "やきやきヤンキーツアー",
+      "slug": "yaki-yaki-yankee",
+      "subtitle": "Yaki yaki yankee tour",
+      "thumbnail_url": ""
+    },
+    {
+      "title": "Fuji Rock 2019",
+      "slug": "fuji-rock-2019",
+      "subtitle": "",
+      "thumbnail_url": ""
+    },
+    {
+      "title": "Fuji Rock 2022",
+      "slug": "fuji-rock-2022",
+      "subtitle": "",
       "thumbnail_url": ""
     }
   ]

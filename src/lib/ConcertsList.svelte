@@ -1,26 +1,78 @@
 <script lang="ts">
+  //imports
+  import { onMount } from 'svelte';
   import Concert from './Concert.svelte';
   import concerts_metadata from './data/concerts_metadata.json';
 
+  //setup concerts array
   type ConcertInfo = {
     title: string,
+    slug: string,
+    subtitle: string,
     thumbnail_url: string
   };
 
   let concerts: ConcertInfo[] = concerts_metadata.concerts;
+
+  //css animation for concert grid
+  let concert_grid_ele: HTMLElement;
+
+  let played = false;
+
+  function wheel_handle(e: WheelEvent) {
+    if (e.deltaY > 0) {
+      animate_concert_grid()
+    }
+  }
+
+  function touchend_handle(e: WheelEvent) {
+    animate_concert_grid();
+  }
+
+  function animate_concert_grid() {
+    if (played) return;
+    played = true;
+    concert_grid_ele.style.display = "grid";
+    concert_grid_ele.animate([
+      {
+        opacity: 0,
+        transform: "translate(0, 10px)"
+      },
+      {
+        opacity: 1,
+        transform: "translate(0, 0)"
+      }
+    ], {
+      duration: 100,
+      fill: "forwards"
+    });
+  }
+
 </script>
 
-<div id="concert-grid">
+<svelte:document on:wheel={wheel_handle} on:touchend={touchend_handle}/>
+
+<div id="concert-grid" bind:this={concert_grid_ele}>
   {#each concerts as concert}
     <Concert {...concert}/>
   {/each}
 </div>
 
+<noscript>
+  <style>
+    #concert-grid {
+      opacity: 1 !important;
+      display: block !important;
+    }
+  </style>
+</noscript>
+
 <style>
   #concert-grid {
-    display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 5%;
+    opacity: 0;
+    display: none;
   }
 
   @media screen and (max-width: 1000px) {
