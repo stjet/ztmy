@@ -6,7 +6,7 @@ export function load({ params }) {
     return params.slug === item.slug;
   });
   if (!concert_info) {
-    throw error(404);
+    throw error(404, "Page Not Found");
   } else {
     return {
       slug: params.slug,

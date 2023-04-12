@@ -1,7 +1,27 @@
-body {
-  background-image: linear-gradient(to right, #BC0ABF, #7D45AA, #47168B);
-}
-
 * {
   color: #efefef;
+}
+
+@keyframes changebackground {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 100vw;
+  }
+}
+
+body {
+  background-image: linear-gradient(to right, #BC0ABF, #7D45AA, #47168B, #7D45AA, #BC0ABF);
+  background-size: 200%;
+  animation-name: changebackground;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-size: 400%;
+  }
 }

@@ -4,6 +4,9 @@
   import Concert from './Concert.svelte';
   import concerts_metadata from './data/concerts_metadata.json';
 
+  //exports
+  export let scroll_ele_show;
+
   //setup concerts array
   type ConcertInfo = {
     title: string,
@@ -14,7 +17,7 @@
 
   let concerts: ConcertInfo[] = concerts_metadata.concerts;
 
-  //css animation for concert grid
+  //css animation for concert grid and scroll down
   let concert_grid_ele: HTMLElement;
 
   let played = false;
@@ -32,6 +35,9 @@
   function animate_concert_grid() {
     if (played) return;
     played = true;
+    //hide scroll_ele
+    scroll_ele_show = false;
+    //animate grid entering
     concert_grid_ele.style.display = "grid";
     concert_grid_ele.animate([
       {
@@ -62,7 +68,7 @@
   <style>
     #concert-grid {
       opacity: 1 !important;
-      display: block !important;
+      display: grid !important;
     }
   </style>
 </noscript>
