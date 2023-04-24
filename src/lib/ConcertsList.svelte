@@ -2,20 +2,14 @@
   //imports
   import { onMount } from 'svelte';
   import Concert from './Concert.svelte';
-  import concerts_metadata from './data/concerts_metadata.json';
+  import concerts_metadata from './data/concerts/concerts_metadata.json';
+  import type { ConcertMetadata } from '$lib/types.ts';
 
   //exports
   export let scroll_ele_show;
 
   //setup concerts array
-  type ConcertInfo = {
-    title: string,
-    slug: string,
-    subtitle: string,
-    thumbnail_url: string
-  };
-
-  let concerts: ConcertInfo[] = concerts_metadata.concerts;
+  let concerts: ConcertMetadata[] = concerts_metadata.concerts;
 
   //css animation for concert grid and scroll down
   let concert_grid_ele: HTMLElement;

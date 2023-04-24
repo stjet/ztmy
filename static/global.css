@@ -25,3 +25,33 @@ body {
     background-size: 400%;
   }
 }
+
+button {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #FCFCFC;
+}
+
+button::after {
+  display: block;
+  position: relative;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 3px;
+  background-color: #efefef;
+  transition: 1s width;
+}
+
+button:hover::after {
+  width: 100%;
+  color: #FCFCFC;
+}

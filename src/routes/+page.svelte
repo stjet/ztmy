@@ -4,7 +4,7 @@
 
 <script lang="ts">
   //imports
-  import ConcertsList from '../lib/ConcertsList.svelte';
+  import ConcertsList from '$lib/ConcertsList.svelte';
 
   //scroll ele shows by default
   let scroll_ele: HTMLElement;

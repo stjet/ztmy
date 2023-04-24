@@ -1,0 +1,193 @@
+{
+  "title": "CLEANING LABO",
+  "slug": "cleaning-labo",
+  "subtitle": "「温れ落ち度」",
+  "thumbnail_url": "",
+  "description": "",
+  "images": [],
+  "dates": [],
+  "setlist": [
+    {
+      "jap": "洗濯機",
+      "eng": "Washing Machine",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:00:00", "00:04:11"]
+    },
+    {
+      "jap": "バイオリン演奏",
+      "eng": "Violin Playing",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:04:12", "00:05:22"]
+    },
+    {
+      "jap": "胸の煙",
+      "eng": "One's Mind",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:05:23", "00:09:36"]
+    },
+    {
+      "jap": "お勉強しといてよ",
+      "eng": "Study Me",
+      "youtube": "https://www.youtube.com/watch?v=_WQNWVZqw4Q",
+      "song": true,
+      "timestamp": ["00:09:37", "00:14:33"]
+    },
+    {
+      "jap": "勘冴えて悔しいわ",
+      "eng": "Kansaete Kuyashiiwa",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:14:34", "00:16:13"]
+    },
+    {
+      "jap": "ヒューマノイド",
+      "eng": "Humanoid",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:16:14", "00:19:13"]
+    },
+    {
+      "jap": "はゔぁ",
+      "eng": "Have A",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:19:14", "00:23:32"]
+    },
+    {
+      "jap": "ACAねの話1",
+      "eng": "ACAね's Talk 1",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:23:33", "00:24:57"]
+    },
+    {
+      "jap": "繰り返す収穫",
+      "eng": "Crop",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:24:58", "00:29:10"]
+    },
+    {
+      "jap": "機械油",
+      "eng": "Engine Oil",
+      "youtube": "https://www.youtube.com/watch?v=i8feIrHIO2k",
+      "song": true,
+      "timestamp": ["00:29:11", "00:33:41"]
+    },
+    {
+      "jap": "彷徨い酔い温度",
+      "eng": "Samayoi Yoi Ondo",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:33:42", "00:40:14"]
+    },
+    {
+      "jap": "勘ぐれい",
+      "eng": "Hunch Gray",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:40:15", "00:45:11"]
+    },
+    {
+      "jap": "過眠",
+      "eng": "Hypersomnia",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:45:12", "00:50:18"]
+    },
+    {
+      "jap": "ろんりねす",
+      "eng": "Loneliness",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:50:19", "00:57:02"]
+    },
+    {
+      "jap": "眩しいDNAだけ",
+      "eng": "Mabushii DNA Dake",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:57:03", "01:01:38"]
+    },
+    {
+      "jap": "暗く黒く",
+      "eng": "Darken",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:01:39", "01:06:20"]
+    },
+    {
+      "jap": "秒針を噛む",
+      "eng": "Byoushin wo Kamu",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:06:21", "01:11:40"]
+    },
+    {
+      "jap": "マイノリティ脈絡",
+      "eng": "Minority Myakuraku",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:11:41", "01:16:47"]
+    },
+    {
+      "jap": "正義",
+      "eng": "Justice",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:16:48", "01:21:39"]
+    },
+    {
+      "jap": "ACAねの話2",
+      "eng": "ACAね's Talk 2",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:21:39", "01:22:34"]
+    },
+    {
+      "jap": "正しくなれない",
+      "eng": "Can't be Right",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:22:35", "01:27:07"]
+    },
+    {
+      "jap": "奥底に眠るルーツ",
+      "eng": "Inner Heart",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:27:08", "01:32:18"]
+    },
+    {
+      "jap": "ACAねの話3",
+      "eng": "ACAね's Talk 3",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:32:19", "01:33:23"]
+    },
+    {
+      "jap": "あいつら全員同窓会",
+      "eng": "Inside Joke",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:33:24", "01:37:42"]
+    },
+    {
+      "jap": "MILABO",
+      "eng": "MILABO",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:37:43", "01:45:30"]
+    },
+    {
+      "jap": "今日のライブメンバー",
+      "eng": "Today's Live Members",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:45:30", "01:48:30"]
+    }
+  ]
+}

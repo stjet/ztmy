@@ -1,0 +1,6 @@
+{
+  "src": {
+    "cleaning-labo": "file:/// (if running locally) or https:// (remote hosting) or normal path if hosting on the site"
+    //...and the rest of the concerts
+  }
+}

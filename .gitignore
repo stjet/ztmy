@@ -17,3 +17,4 @@ jsconfig.js
 package-lock.json
 jsconfig.json
 tsconfig.json
+/src/lib/data/video_config.json
