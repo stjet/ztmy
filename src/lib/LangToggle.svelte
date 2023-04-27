@@ -10,5 +10,5 @@
 </script>
 
 <div>
-  <button on:click={switch_lang}>{#if lang == "jap"}English{:else}日本語{/if}</button>
+  <button class="default-button" on:click={switch_lang}>{#if lang == "jap"}English{:else}日本語{/if}</button>
 </div>

@@ -1,6 +1,9 @@
 {
   "src": {
-    "cleaning-labo": "file:/// (if running locally) or https:// (remote hosting) or normal path if hosting on the site"
+    "cleaning-labo": "https://example.com/videos/cleaning-labo.mp4",
+    "zutomayo-factory-day1": "../videos/cleaning-labo.mp4",
+    "zutomayo-factory-day2": "none",
+    "fuji-rock-2019": "なし"
     //...and the rest of the concerts
   }
 }

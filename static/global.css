@@ -26,7 +26,7 @@ body {
   }
 }
 
-button {
+button.default-button {
   position: relative;
   background-color: transparent;
   border: 1px solid transparent;
@@ -34,12 +34,12 @@ button {
   font-weight: bold;
 }
 
-button:hover {
+button.default-button:hover {
   cursor: pointer;
   color: #FCFCFC;
 }
 
-button::after {
+button.default-button::after {
   display: block;
   position: relative;
   content: "";
@@ -51,7 +51,7 @@ button::after {
   transition: 1s width;
 }
 
-button:hover::after {
+button.default-button:hover::after {
   width: 100%;
   color: #FCFCFC;
 }

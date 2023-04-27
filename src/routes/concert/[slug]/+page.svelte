@@ -14,6 +14,7 @@
   const concert_info: ConcertInfo = data.concert_info as ConcertInfo;
   const video_src: string | boolean = data.video_src;
   let lang: string = "eng";
+  let time_jump = -1;
   //
   onMount(() => {
     if (navigator.language.toLowerCase().startsWith("ja")) {
@@ -35,7 +36,7 @@
       <div id="setlist">
         <ol>
           {#each concert_info.setlist as set_item}
-            <li><SetItem {...set_item} {lang}/></li>
+            <li><SetItem {...set_item} {lang} bind:time_jump={time_jump}/></li>
           {/each}
         </ol>
       </div>
@@ -43,7 +44,7 @@
     <div>
       <h2>Video</h2>
       <div>
-        <Video {video_src}/>
+        <Video {video_src} {time_jump}/>
       </div>
     </div>
     <div>
@@ -66,7 +67,7 @@
 
   #concert-container {
     display: grid;
-    grid-template-columns: 25% 50% 15%;
+    grid-template-columns: 18% 57% 15%;
     column-gap: 24px;
   }
 
@@ -76,7 +77,7 @@
     }
 
     #setlist {
-      max-height: 70vh;
+      max-height: 45vh;
     }
   }
 </style>

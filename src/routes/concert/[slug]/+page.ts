@@ -22,6 +22,9 @@ export async function load({ params }) {
       let video_src: string | boolean;
       if (Object.keys(video_srcs).includes(slug)) {
         video_src = video_srcs[slug];
+        if (video_src.toLowerCase().trim() === "none" || video_src.trim() === "なし") {
+          video_src = false;
+        }
       } else {
         video_src = false;
       }
