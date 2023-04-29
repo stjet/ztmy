@@ -4,6 +4,7 @@
   //exports
   export let video_src: string | boolean;
   export let time_jump: number;
+  export let current_time: number = 0;
 
   //if timestamp (in seconds) changes, video should jump to that point
   //negative timestamp means ignore, do not jump
@@ -41,6 +42,12 @@
     }
   }
 
+  //update current video time
+  function time_update() {
+    console.log("time update", video_ele.currentTime);
+    current_time = video_ele.currentTime;
+  }
+
   //if browser has input loaded with the video on page load already, load video
   onMount(() => {
     if (video_load_ele.files) {
@@ -55,7 +62,7 @@
   {#if video_src}
     <button id="use-own-button" class="default-button" on:click={use_own}>Use your own video</button>
     <br>
-    <video bind:this={video_ele} src="{ video_src }" type="{ vid_type }" controls></video>
+    <video bind:this={video_ele} on:timeupdate={time_update} src="{ video_src }" type="{ vid_type }" controls></video>
   {:else}
     <p>No video provided for this concert. Use your own?</p>
     <input type="file" accept="video/*" bind:this={video_load_ele} on:change={load_video}/>

@@ -1,0 +1,207 @@
+{
+  "title": "ZUTOMAYO FACTORY Day 1",
+  "slug": "zutomayo-factory-day1",
+  "subtitle": "「鷹は飢えても踊り忘れず」",
+  "thumbnail_url": "",
+  "description": "",
+  "images": [],
+  "date": "2022/04/16",
+  "setlist": [
+    {
+      "jap": "初め",
+      "eng": "Intro",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:00:00", "00:02:00"]
+    },
+    {
+      "jap": "オープンリール",
+      "eng": "Open Reel Ensemble",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:02:01", "00:05:40"]
+    },
+    {
+      "jap": "眩しいDNAだけ",
+      "eng": "Mabushii DNA Dake",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:05:41", "00:10:15"]
+    },
+    {
+      "jap": "ヒューマノイド",
+      "eng": "Humanoid",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:10:16", "00:12:50"]
+    },
+    {
+      "jap": "勘冴えて悔しいわ",
+      "eng": "Kansaete Kuyashiiwa",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:12:51", "00:14:29"]
+    },
+    {
+      "jap": "マイノリティ脈絡",
+      "eng": "Minority Myakuraku",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:14:30", "00:19:39"]
+    },
+    {
+      "jap": "ACAねの話1",
+      "eng": "ACAね's Talk 1",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:19:40", "00:22:17"]
+    },
+    {
+      "jap": "ハゼ馳せる果てるまで",
+      "eng": "Haze Haseru Haterumade",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:22:18", "00:26:29"]
+    },
+    {
+      "jap": "違う曲にしようよ",
+      "eng": "Flow Different",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:26:30", "00:30:18"]
+    },
+    {
+      "jap": "機械油",
+      "eng": "Engine Oil",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:30:19", "00:36:50"]
+    },
+    {
+      "jap": "彷徨い酔い温度",
+      "eng": "Samayoi Yoi Ondo",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:36:51", "00:43:43"]
+    },
+    {
+      "jap": "ACAねの話2",
+      "eng": "ACAね's Talk 2",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:43:44", "00:45:29"]
+    },
+    {
+      "jap": "夜中のキスミ",
+      "eng": "Kisumi at Midnight",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:45:30", "00:50:13"]
+    },
+    {
+      "jap": "MILABO",
+      "eng": "MILABO",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:50:14", "00:54:48"]
+    },
+    {
+      "jap": "脳裏上のクラッカー",
+      "eng": "Nouriueno Cracker",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:54:49", "00:59:45"]
+    },
+    {
+      "jap": "Dear Mr 「F」",
+      "eng": "Dear Mr 「F」",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:59:46", "01:08:47"]
+    },
+    {
+      "jap": "正しくなれない",
+      "eng": "Can't Be Right",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:08:48", "01:13:34"]
+    },
+    {
+      "jap": "お勉強しといてよ",
+      "eng": "Study Me",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:13:35", "01:19:10"]
+    },
+    {
+      "jap": "ミラーチューン",
+      "eng": "Mirror Tune",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:19:11", "01:23:34"]
+    },
+    {
+      "jap": "ACAねの話3",
+      "eng": "ACAね's Talk 3",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:23:35", "01:25:18"]
+    },
+    {
+      "jap": "あいつら全員同窓会",
+      "eng": "Inside Joke",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:25:19", "01:29:44"]
+    },
+    {
+      "jap": "秒針を噛む",
+      "eng": "Byoushin wo Kamu",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:29:45", "01:36:30"]
+    },
+    {
+      "jap": "拍手",
+      "eng": "Clapping",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:36:31", "01:38:25"]
+    },
+    {
+      "jap": "Ham (代償)",
+      "eng": "Ham",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:38:26", "01:43:45"]
+    },
+    {
+      "jap": "ACAねの話4",
+      "eng": "ACAね's Talk 4",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:43:46", "01:45:34"]
+    },
+    {
+      "jap": "サターン",
+      "eng": "Saturn",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:45:35", "01:52:00"]
+    },
+    {
+      "jap": "正義",
+      "eng": "Justice",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:52:01", "01:56:43"]
+    },
+    {
+      "jap": "今日のバンドメンバー",
+      "eng": "Today's Band Members",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:56:44", "2:02:51"]
+    }
+  ]
+}

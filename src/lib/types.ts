@@ -20,6 +20,6 @@ export type ConcertInfo = {
   thumbnail_url: string,
   description: string,
   images: string[],
-  dates: string[],
+  date: string,
   setlist: SetItem[]
 };

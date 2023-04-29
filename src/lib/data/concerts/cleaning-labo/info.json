@@ -5,7 +5,7 @@
   "thumbnail_url": "",
   "description": "",
   "images": [],
-  "dates": [],
+  "date": "2021/05/16",
   "setlist": [
     {
       "jap": "洗濯機",
@@ -145,7 +145,7 @@
       "eng": "ACAね's Talk 2",
       "youtube": false,
       "song": false,
-      "timestamp": ["01:21:39", "01:22:34"]
+      "timestamp": ["01:21:40", "01:22:34"]
     },
     {
       "jap": "正しくなれない",
@@ -183,11 +183,11 @@
       "timestamp": ["01:37:43", "01:45:30"]
     },
     {
-      "jap": "今日のライブメンバー",
-      "eng": "Today's Live Members",
+      "jap": "今日のバンドメンバー",
+      "eng": "Today's Band Members",
       "youtube": false,
       "song": false,
-      "timestamp": ["01:45:30", "01:48:30"]
+      "timestamp": ["01:45:31", "01:48:30"]
     }
   ]
 }

@@ -15,6 +15,7 @@
   const video_src: string | boolean = data.video_src;
   let lang: string = "eng";
   let time_jump = -1;
+  let current_time = 0;
   //
   onMount(() => {
     if (navigator.language.toLowerCase().startsWith("ja")) {
@@ -24,6 +25,10 @@
     }
   });
 </script>
+
+<svelte:head>
+  <title>{ concert_info.title }</title>
+</svelte:head>
 
 <div>
   <div id="lang-toggle-container">
@@ -36,7 +41,7 @@
       <div id="setlist">
         <ol>
           {#each concert_info.setlist as set_item}
-            <li><SetItem {...set_item} {lang} bind:time_jump={time_jump}/></li>
+            <li><SetItem {...set_item} {lang} {current_time} bind:time_jump={time_jump}/></li>
           {/each}
         </ol>
       </div>
@@ -44,7 +49,7 @@
     <div>
       <h2>Video</h2>
       <div>
-        <Video {video_src} {time_jump}/>
+        <Video {video_src} {time_jump} bind:current_time={current_time}/>
       </div>
     </div>
     <div>
@@ -63,11 +68,12 @@
     overflow-y: scroll;
     scrollbar-color: #A6A6A6 #efefef;
     scrollbar-width: thin;
+    padding-right: 7px;
   }
 
   #concert-container {
     display: grid;
-    grid-template-columns: 18% 57% 15%;
+    grid-template-columns: 19% 55% 16%;
     column-gap: 24px;
   }
 

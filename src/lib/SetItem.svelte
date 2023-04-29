@@ -6,20 +6,37 @@
   export let youtube: string | boolean;
   export let song: boolean;
   export let timestamp: string[2];
+  export let current_time: number;
   export let time_jump: number;
+
+  let current_song = false;
+
+  //convert string timestamp (eg 01:33:24) to seconds
+  function convert_timestamp(string_timestamp: string) {
+    let hours: number = Number(string_timestamp.split(":")[0]);
+    let minutes: number = Number(string_timestamp.split(":")[1]);
+    let seconds: number = Number(string_timestamp.split(":")[2]);
+    return hours*60*60+minutes*60+seconds;
+  }
 
   //change video seconds if timestamp clicked
   function change_timestamp(event: MouseEvent) {
     let clicked_timestamp = (event.target as HTMLElement).innerText;
-    //convert string timestamp (eg 01:33:24) to seconds
-    let hours: number = Number(clicked_timestamp.split(":")[0]);
-    let minutes: number = Number(clicked_timestamp.split(":")[1]);
-    let seconds: number = Number(clicked_timestamp.split(":")[2]);
-    time_jump = hours*60*60+minutes*60+seconds;
+    time_jump = convert_timestamp(clicked_timestamp);
+  }
+
+  $: {
+    let start = convert_timestamp(timestamp[0]);
+    let end = convert_timestamp(timestamp[1]);
+    if (start <= Math.round(current_time) && Math.round(current_time) <= end) {
+      current_song = true;
+    } else {
+      current_song = false;
+    }
   }
 </script>
 
-<div>
+<div class="{ current_song ? 'current-song setitem-container' : 'setitem-container' }">
   <h3>
     {#if lang == "jap"}{ jap }{:else}{ eng }{/if}
     {#if song}
@@ -72,5 +89,16 @@
   .vid-timestamp:hover {
     cursor: pointer;
     color: #FCFCFC;
+  }
+
+  div.setitem-container {
+    padding: 1px 5px;
+    border-radius: 6px;
+  }
+
+  /* wrap in :is() so our dumb tooling thing doesn't remove it for being unused */
+  :is(.current-song) {
+    background-color: rgba(35, 20, 150, 0.25);
+    box-shadow: 1px 1px 10px purple;
   }
 </style>
