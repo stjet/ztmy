@@ -57,7 +57,7 @@
   }
 
   .main-container {
-    width: 62%;
+    width: 64%;
     margin: auto;
     margin-top: 24vh;
     text-align: center;

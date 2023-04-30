@@ -4,6 +4,7 @@
   import SetItem from '$lib/SetItem.svelte';
   import LangToggle from '$lib/LangToggle.svelte';
   import Video from '$lib/Video.svelte';
+  import Lyrics from '$lib/Lyrics.svelte';
   import concerts_metadata from '$lib/data/concerts/concerts_metadata.json';
   import type { ConcertInfo } from '$lib/types.ts';
   
@@ -49,11 +50,14 @@
     <div>
       <h2>Video</h2>
       <div>
-        <Video {video_src} {time_jump} bind:current_time={current_time}/>
+        <Video {video_src} sub_src={concert_info.sub_src} {time_jump} bind:current_time={current_time}/>
       </div>
     </div>
     <div>
       <h2>Lyrics</h2>
+      <div>
+        <Lyrics lyrics={false}/>
+      </div>
     </div>
   </div>
 </div>
@@ -73,7 +77,7 @@
 
   #concert-container {
     display: grid;
-    grid-template-columns: 19% 55% 16%;
+    grid-template-columns: 19% 55% 26%;
     column-gap: 24px;
   }
 

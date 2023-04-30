@@ -3,6 +3,7 @@
 
   //exports
   export let video_src: string | boolean;
+  export let sub_src: string | boolean;
   export let time_jump: number;
   export let current_time: number = 0;
 
@@ -44,13 +45,12 @@
 
   //update current video time
   function time_update() {
-    console.log("time update", video_ele.currentTime);
     current_time = video_ele.currentTime;
   }
 
   //if browser has input loaded with the video on page load already, load video
   onMount(() => {
-    if (video_load_ele.files) {
+    if (video_load_ele?.files) {
       if (video_load_ele.files.length > 0) {
         video_src = URL.createObjectURL(video_load_ele.files[0]);
       }
@@ -59,10 +59,15 @@
 </script>
 
 <div>
-  {#if video_src}
+  {#if typeof video_src === "string"}
     <button id="use-own-button" class="default-button" on:click={use_own}>Use your own video</button>
     <br>
-    <video bind:this={video_ele} on:timeupdate={time_update} src="{ video_src }" type="{ vid_type }" controls></video>
+    <!-- svelte-ignore a11y-media-has-caption -->
+    <video bind:this={video_ele} on:timeupdate={time_update} src="{ video_src }" type="{ vid_type }" controls>
+      {#if typeof sub_src === "string"}
+        <track kind="captions" src={sub_src} label="Lyrics">
+      {/if}
+    </video>
   {:else}
     <p>No video provided for this concert. Use your own?</p>
     <input type="file" accept="video/*" bind:this={video_load_ele} on:change={load_video}/>

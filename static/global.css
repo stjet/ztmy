@@ -1,5 +1,16 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), url("fonts/Open_Sans/OpenSans.woff");
+}
+
+@font-face {
+  font-family: "BIZ UDMincho";
+  src: local("BIZ UDMincho"), url("fonts/BIZ_UDMincho/BIZUDMincho.woff");
+}
+
 * {
   color: #efefef;
+  font-family: "Open Sans", "BIZ UDMincho";
 }
 
 @keyframes changebackground {
@@ -54,4 +65,16 @@ button.default-button::after {
 button.default-button:hover::after {
   width: 100%;
   color: #FCFCFC;
+}
+
+input:not(input[type="file"]) {
+  color: #353535;
+}
+
+textarea:not(textarea:disabled) {
+  color: #353535;
+}
+
+input[type="file"]::file-selector-button {
+  font-family: "Open Sans", "BIZ UDMincho";
 }

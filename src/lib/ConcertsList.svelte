@@ -48,14 +48,22 @@
     });
   }
 
+  let hide_some = true;
+
+  function show_more() {
+    hide_some = false;
+  }
 </script>
 
 <svelte:document on:wheel={wheel_handle} on:touchend={touchend_handle}/>
 
 <div id="concert-grid" bind:this={concert_grid_ele}>
-  {#each concerts as concert}
-    <Concert {...concert}/>
+  {#each concerts as concert, i}
+    <Concert {...concert} show={hide_some ? i < 6 : true}/>
   {/each}
+  {#if hide_some}
+    <button id="show-more" on:click={show_more}>Show More</button>
+  {/if}
 </div>
 
 <noscript>
@@ -63,6 +71,10 @@
     #concert-grid {
       opacity: 1 !important;
       display: grid !important;
+    }
+
+    #show-more {
+      display: none;
     }
   </style>
 </noscript>
@@ -75,10 +87,26 @@
     display: none;
   }
 
+  #show-more {
+    font-size: 1em;
+    padding-top: 15px;
+    cursor: pointer;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+  }
+
   @media screen and (max-width: 1000px) {
     #concert-grid {
       /* one column if on mobile */
       grid-template-columns: auto;
+    }
+
+    #show-more {
+      grid-column-start: 1;
+      grid-column-end: 2;
     }
   }
 </style>

@@ -21,5 +21,6 @@ export type ConcertInfo = {
   description: string,
   images: string[],
   date: string,
+  sub_src: string | boolean,
   setlist: SetItem[]
 };
