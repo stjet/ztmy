@@ -1,4 +1,7 @@
 <script lang="ts">
+  //imports
+  import { lyric_to_html } from '$lib/utils.ts';
+
   //exports
   export let add_lyric_callback: (start: string, end: string, lyric: string) => void;
 
@@ -18,20 +21,11 @@
     if (!e_t.includes(".")) {
       e_t = e_t+".000"
     }
-    let splitted = lyric.split("[");
-    //trust me typescript, .shift() will not be undefined
-    let ly: string = splitted.shift() as string;
-    for (let i=0; i < splitted.length; i++) {
-      let kanji_furigana = splitted[i].split(")")[0];
-      let kanji = kanji_furigana.split("](")[0];
-      let furigana = kanji_furigana.split("](")[1];
-      ly += `<ruby>${kanji}<rt>${furigana}</rt></ruby>`;
-      let leftover = splitted[i].split(")")[1];
-      ly += leftover;
-    }
+    let ly: string = lyric_to_html(lyric);
     add_lyric_callback(s_t, e_t, ly);
     //clear the lyric field
     lyric = "";
+    start_timestamp = end_timestamp;
   }
 </script>
 

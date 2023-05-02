@@ -12,8 +12,9 @@
   export let data;
   //get concert info
   const slug: string = data.slug;
-  const concert_info: ConcertInfo = data.concert_info as ConcertInfo;
+  const concert_info: ConcertInfo = data.concert_info;
   const video_src: string | boolean = data.video_src;
+  const lyrics_text: string | boolean = data.lyrics_text;
   let lang: string = "eng";
   let time_jump = -1;
   let current_time = 0;
@@ -56,7 +57,7 @@
     <div>
       <h2>Lyrics</h2>
       <div>
-        <Lyrics lyrics={false}/>
+        <Lyrics lyrics={lyrics_text} {current_time}/>
       </div>
     </div>
   </div>

@@ -24,3 +24,10 @@ export type ConcertInfo = {
   sub_src: string | boolean,
   setlist: SetItem[]
 };
+
+export type Lyric = {
+  timestamps: string[],
+  start: number,
+  end: number,
+  text: string
+};

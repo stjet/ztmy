@@ -1,12 +1,13 @@
 import { error } from '@sveltejs/kit';
 import concerts_metadata from '$lib/data/concerts/concerts_metadata.json';
 import video_config from "$lib/data/video_config.json";
+import type { ConcertInfo } from '$lib/types.ts';
 
 const video_srcs: {[slug: string]: string} = video_config.src;
 
 const concerts_info = import.meta.glob('$lib/data/concerts/**/*.json');
 
-export async function load({ params }) {
+export async function load({ params, fetch }) {
   const slug: string = params.slug.toLowerCase();
   let concert_info = concerts_metadata.concerts.find((item) => {
     return slug === item.slug;
@@ -18,7 +19,7 @@ export async function load({ params }) {
       return item.includes(slug) && item.endsWith("info.json");
     });
     if (file_key !== undefined) {
-      let concert_info = await concerts_info[file_key]();
+      let concert_info: ConcertInfo = await concerts_info[file_key]() as ConcertInfo;
       let video_src: string | boolean;
       if (Object.keys(video_srcs).includes(slug)) {
         video_src = video_srcs[slug];
@@ -28,10 +29,15 @@ export async function load({ params }) {
       } else {
         video_src = false;
       }
+      let lyrics_text: string | boolean = false;
+      if (typeof concert_info.sub_src === "string") {
+        lyrics_text = await (await fetch(`/vtt/${slug}.vtt`)).text();
+      }
       return {
         slug: slug,
         concert_info: concert_info,
-        video_src: video_src
+        video_src: video_src,
+        lyrics_text: lyrics_text
       };
     } else {
       throw error(404, "Page Not Found");

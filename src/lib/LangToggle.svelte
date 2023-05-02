@@ -1,5 +1,6 @@
 <script lang="ts">
   export let lang: string;
+
   function switch_lang() {
     if (lang === "jap") {
       lang = "eng";
