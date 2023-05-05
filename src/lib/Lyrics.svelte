@@ -1,11 +1,12 @@
 <script lang="ts">
   //imports
-  import { parse_lyrics, lyric_to_html } from '$lib/utils.ts';
+  import { parse_lyrics, lyric_to_html, extract_hiragana, hiragana_to_romaji } from '$lib/utils.ts';
   import type { Lyric } from '$lib/types.ts';
 
   //exports
   export let lyrics: string | boolean;
   export let current_time: number;
+  export let lang: string;
 
   //parse lyrics
   let parsed_lyrics: Lyric[];
@@ -18,23 +19,31 @@
   let current_index = -1;
 
   $: {
-    for (let i=0; i < parsed_lyrics.length; i++) {
-      let i_lyric = parsed_lyrics[i];
-      if (current_time > i_lyric.start && current_time < i_lyric.end) {
-        current_index = i;
-        //scroll into view
-        let children = lyrics_container_ele.childNodes;
-        for (let j=0; j < children.length; j++) {
-          let child = children[j] as HTMLElement;
-          if (child.title === `${i_lyric.timestamps[0]} - ${i_lyric.timestamps[1]}`) {
-            let new_scroll: number = child.offsetTop - Math.round(lyrics_container_ele.clientHeight/2);
-            if (new_scroll < 0) {
-              new_scroll = 0;
+    let found = false;
+    if (parsed_lyrics) {
+      for (let i=0; i < parsed_lyrics.length; i++) {
+        let i_lyric = parsed_lyrics[i];
+        if (current_time > i_lyric.start && current_time < i_lyric.end) {
+          found = true;
+          current_index = i;
+          //scroll into view
+          let children = lyrics_container_ele.childNodes;
+          for (let j=0; j < children.length; j++) {
+            let child = children[j] as HTMLElement;
+            if (child.title === `${i_lyric.timestamps[0]} - ${i_lyric.timestamps[1]}`) {
+              let new_scroll: number = child.offsetTop - Math.round(lyrics_container_ele.clientHeight/2);
+              if (new_scroll < 0) {
+                new_scroll = 0;
+              }
+              lyrics_container_ele.scrollTop = new_scroll;
+              break;
             }
-            lyrics_container_ele.scrollTop = new_scroll;
           }
+          break;
         }
-        break;
+      }
+      if (!found) {
+        current_index = -1;
       }
     }
   }
@@ -43,10 +52,12 @@
   let mask: string = "linear-gradient(#efefef 35%, #efefef 65%, rgba(255, 255, 255, 0.2))";
 
   function change_mask(_e: Event) {
-    if (lyrics_container_ele.scrollTop > 120) {
-      mask = "linear-gradient(rgba(255, 255, 255, 0.2), #efefef 35%, #efefef 65%, rgba(255, 255, 255, 0.2))";
-    } else {
+    if (lyrics_container_ele.scrollTop < 120) {
       mask = "linear-gradient(#efefef 35%, #efefef 65%, rgba(255, 255, 255, 0.2))";
+    } else if (lyrics_container_ele.scrollTop > lyrics_container_ele.scrollHeight-lyrics_container_ele.clientHeight-120) {
+      mask = "linear-gradient(rgba(255, 255, 255, 0.2), #efefef 35%, #efefef 65%)";
+    } else {
+      mask = "linear-gradient(rgba(255, 255, 255, 0.2), #efefef 35%, #efefef 65%, rgba(255, 255, 255, 0.2))";
     }
   }
 </script>
@@ -55,7 +66,13 @@
   {#if typeof lyrics === "string"}
     <div id="lyrics-container" bind:this={lyrics_container_ele} on:scroll={change_mask} style:mask>
       {#each parsed_lyrics as lyric, index}
-        <p class="{ index == current_index ? 'current-lyric lyric' : 'lyric'}" title="{lyric.timestamps[0]} - {lyric.timestamps[1]}">{@html lyric_to_html(lyric.text) }</p>
+        <p class="{ index == current_index ? 'current-lyric lyric' : 'lyric'}" title="{lyric.timestamps[0]} - {lyric.timestamps[1]}">
+          {#if lang === "eng"}
+            { hiragana_to_romaji(extract_hiragana(lyric.text)) }
+          {:else}
+            {@html lyric_to_html(lyric.text) }
+          {/if}
+        </p>
       {/each}
     </div>
   {:else}
@@ -79,6 +96,7 @@
     padding: 0;
     margin-top: 0;
     margin-bottom: 14px;
+    word-break: break-all;
   }
 
   .current-lyric {

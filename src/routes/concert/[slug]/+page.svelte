@@ -15,11 +15,31 @@
   const concert_info: ConcertInfo = data.concert_info;
   const video_src: string | boolean = data.video_src;
   const lyrics_text: string | boolean = data.lyrics_text;
+
+  //variables
   let lang: string = "eng";
   let time_jump = -1;
   let current_time = 0;
-  //
+  
+  //toggle info
+  let show_info = false;
+
+  function toggle_info() {
+    if (show_info) {
+      show_info = false;
+    } else {
+      show_info = true;
+    }
+  }
+
+  function toggle_info_keypress(event: KeyboardEvent) {
+    if (event.key === "Enter") {
+      toggle_info();
+    }
+  }
+
   onMount(() => {
+    //language based on preference
     if (navigator.language.toLowerCase().startsWith("ja")) {
       lang = "jap";
     } else if (navigator.language.toLowerCase().startsWith("en")) {
@@ -38,7 +58,21 @@
   </div>
   <div id="concert-container">
     <div>
-      <h2>Info</h2>
+      <h2>
+        Info
+        <span id="clickable-info" role="button" on:click={toggle_info} on:keypress={toggle_info_keypress} tabindex="0">
+          {#if show_info}
+            -
+          {:else}
+            +
+          {/if}
+        </span>
+      </h2>
+      {#if show_info}
+        <div>
+          {concert_info.date}
+        </div>
+      {/if}
       <h2>Setlist</h2>
       <div id="setlist">
         <ol>
@@ -57,7 +91,7 @@
     <div>
       <h2>Lyrics</h2>
       <div>
-        <Lyrics lyrics={lyrics_text} {current_time}/>
+        <Lyrics lyrics={lyrics_text} {current_time} {lang}/>
       </div>
     </div>
   </div>
@@ -80,6 +114,11 @@
     display: grid;
     grid-template-columns: 19% 55% 26%;
     column-gap: 24px;
+  }
+
+  #clickable-info {
+    cursor: pointer;
+    padding: 3px;
   }
 
   @media screen and (max-width: 1000px) {

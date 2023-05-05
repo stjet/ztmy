@@ -1,0 +1,222 @@
+{
+  "title": "ZUTOMAYO FACTORY Day 2",
+  "slug": "zutomayo-factory-day2",
+  "subtitle": "「鷹は飢えても踊り忘れず」",
+  "thumbnail_url": "",
+  "description": "",
+  "images": [],
+  "date": "2022/04/17",
+  "sub_src": false,
+  "setlist": [
+    {
+      "jap": "初め",
+      "eng": "Intro",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:00:00", "00:02:42"]
+    },
+    {
+      "jap": "ピアノ演奏",
+      "eng": "Piano Playing",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:02:43", "00:04:42"]
+    },
+    {
+      "jap": "ばかじゃないのに",
+      "eng": "Stay Foolish",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:04:43", "00:09:19"]
+    },
+    {
+      "jap": "低血ボルト",
+      "eng": "Fastening",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:09:20", "00:11:45"]
+    },
+    {
+      "jap": "勘冴えて悔しいわ",
+      "eng": "Kansaete Kuyashiiwa",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:11:46", "00:13:27"]
+    },
+    {
+      "jap": "マイノリティ脈絡",
+      "eng": "Minority Myakuraku",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:13:28", "00:18:40"]
+    },
+    {
+      "jap": "ACAねの話1",
+      "eng": "ACAね's Talk 1",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:18:41", "00:20:53"]
+    },
+    {
+      "jap": "JK BOMBER",
+      "eng": "JK BOMBER",
+      "youtube": "https://www.youtube.com/watch?v=dLyx1tb5eSE",
+      "song": true,
+      "timestamp": ["00:20:54", "00:25:05"]
+    },
+    {
+      "jap": "違う曲にしようよ",
+      "eng": "Flow Different",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:25:06", "00:28:48"]
+    },
+    {
+      "jap": "機械油",
+      "eng": "Engine Oil",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:28:49", "00:35:21"]
+    },
+    {
+      "jap": "機械油",
+      "eng": "Engine Oil",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:28:49", "00:35:20"]
+    },
+    {
+      "jap": "彷徨い酔い温度",
+      "eng": "Samayoi Yoi Ondo",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:35:21", "00:42:19"]
+    },
+    {
+      "jap": "ACAねの話2",
+      "eng": "ACAね's Talk 2",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:42:20", "00:43:16"]
+    },
+    {
+      "jap": "袖のキルト",
+      "eng": "QUILT",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:43:17", "00:47:32"]
+    },
+    {
+      "jap": "MILABO",
+      "eng": "MILABO",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:47:33", "00:52:02"]
+    },
+    {
+      "jap": "脳裏上のクラッカー",
+      "eng": "Nouriueno Cracker",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:52:03", "00:57:00"]
+    },
+    {
+      "jap": "Dear Mr 「F」",
+      "eng": "Dear Mr 「F」",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:57:01", "01:05:38"]
+    },
+    {
+      "jap": "暗く黒く",
+      "eng": "Darken",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:05:39", "01:11:00"]
+    },
+    {
+      "jap": "お勉強しといてよ",
+      "eng": "Study Me",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:11:01", "01:16:34"]
+    },
+    {
+      "jap": "ミラーチューン",
+      "eng": "Mirror Tune",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:16:35", "01:20:53"]
+    },
+    {
+      "jap": "ACAねの話3",
+      "eng": "ACAね's Talk 3",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:20:54", "01:21:38"]
+    },
+    {
+      "jap": "あいつら全員同窓会",
+      "eng": "Inside Joke",
+      "youtube": "https://www.youtube.com/watch?v=o2tonXY8lCY",
+      "song": true,
+      "timestamp": ["01:21:39", "01:26:01"]
+    },
+    {
+      "jap": "秒針を噛む",
+      "eng": "Byoushin wo Kamu",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:26:02", "01:32:50"]
+    },
+    {
+      "jap": "休み",
+      "eng": "Break",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:32:51", "01:34:55"]
+    },
+    {
+      "jap": "またね幻 (希求)",
+      "eng": "Matane Maboroshi (wish)",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:34:56", "01:40:55"]
+    },
+    {
+      "jap": "またね幻 (希求)",
+      "eng": "Matane Maboroshi (wish)",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:34:56", "01:41:00"]
+    },
+    {
+      "jap": "ACAねの話4",
+      "eng": "ACAね's Talk 4",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:41:01", "01:45:52"]
+    },
+    {
+      "jap": "サターン (ろんりー)",
+      "eng": "Saturn (lonely)",
+      "youtube": "https://www.youtube.com/watch?v=FGGbV5o-btA",
+      "song": true,
+      "timestamp": ["01:45:53", "01:52:35"]
+    },
+    {
+      "jap": "正義",
+      "eng": "Justice",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:52:36", "01:57:50"]
+    },
+    {
+      "jap": "今日のバンドメンバー",
+      "eng": "Today's Band Members",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:57:51", "2:06:41"]
+    }
+  ]
+}
