@@ -3,10 +3,11 @@
   import { onMount } from 'svelte';
   import Concert from './Concert.svelte';
   import concerts_metadata from './data/concerts/concerts_metadata.json';
+  import { animate_down } from '$lib/utils.ts';
   import type { ConcertMetadata } from '$lib/types.ts';
 
   //exports
-  export let scroll_ele_show;
+  export let scroll_ele_show: boolean;
 
   //setup concerts array
   let concerts: ConcertMetadata[] = concerts_metadata.concerts;
@@ -16,36 +17,12 @@
 
   let played = false;
 
-  function wheel_handle(e: WheelEvent) {
-    if (e.deltaY > 0) {
-      animate_concert_grid()
+  $: {
+    if (!scroll_ele_show && !played) {
+      played = true;
+      scroll_ele_show = false;
+      animate_down(concert_grid_ele);
     }
-  }
-
-  function touchend_handle(e: WheelEvent) {
-    animate_concert_grid();
-  }
-
-  function animate_concert_grid() {
-    if (played) return;
-    played = true;
-    //hide scroll_ele
-    scroll_ele_show = false;
-    //animate grid entering
-    concert_grid_ele.style.display = "grid";
-    concert_grid_ele.animate([
-      {
-        opacity: 0,
-        transform: "translate(0, 10px)"
-      },
-      {
-        opacity: 1,
-        transform: "translate(0, 0)"
-      }
-    ], {
-      duration: 100,
-      fill: "forwards"
-    });
   }
 
   let hide_some = true;
@@ -55,8 +32,6 @@
   }
 </script>
 
-<svelte:document on:wheel={wheel_handle} on:touchend={touchend_handle}/>
-
 <div id="concert-grid" bind:this={concert_grid_ele}>
   {#each concerts as concert, i}
     <Concert {...concert} show={hide_some ? i < 6 : true}/>
@@ -65,19 +40,6 @@
     <button id="show-more" on:click={show_more}>Show More</button>
   {/if}
 </div>
-
-<noscript>
-  <style>
-    #concert-grid {
-      opacity: 1 !important;
-      display: grid !important;
-    }
-
-    #show-more {
-      display: none;
-    }
-  </style>
-</noscript>
 
 <style>
   #concert-grid {

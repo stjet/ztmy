@@ -10,6 +10,7 @@
   
   //exports
   export let data;
+
   //get concert info
   const slug: string = data.slug;
   const concert_info: ConcertInfo = data.concert_info;
@@ -74,7 +75,7 @@
         </div>
       {/if}
       <h2>Setlist</h2>
-      <div id="setlist">
+      <div id="setlist" class="{ show_info ? 'smaller-setlist' : '' }">
         <ol>
           {#each concert_info.setlist as set_item}
             <li><SetItem {...set_item} {lang} {current_time} bind:time_jump={time_jump}/></li>
@@ -85,7 +86,7 @@
     <div>
       <h2>Video</h2>
       <div>
-        <Video {video_src} sub_src={concert_info.sub_src} {time_jump} bind:current_time={current_time}/>
+        <Video {video_src} sub_src={concert_info.sub_src} ytdlp={concert_info.ytdlp} {time_jump} bind:current_time={current_time}/>
       </div>
     </div>
     <div>
@@ -108,6 +109,10 @@
     scrollbar-color: #A6A6A6 #efefef;
     scrollbar-width: thin;
     padding-right: 7px;
+  }
+
+  .smaller-setlist {
+    max-height: 72vh !important;
   }
 
   #concert-container {

@@ -1,5 +1,23 @@
 import type { Lyric } from '$lib/types.ts';
 
+export function animate_down(ele: HTMLElement) {
+  //animate grid entering
+  ele.style.display = "grid";
+  ele.animate([
+    {
+      opacity: 0,
+      transform: "translate(0, 10px)"
+    },
+    {
+      opacity: 1,
+      transform: "translate(0, 0)"
+    }
+  ], {
+    duration: 100,
+    fill: "forwards"
+  });
+}
+
 //convert string timestamp (eg 01:33:24) to seconds
 export function convert_timestamp(string_timestamp: string) {
   let hours: number = Number(string_timestamp.split(":")[0]);

@@ -4,6 +4,7 @@
   //exports
   export let video_src: string | boolean;
   export let sub_src: string | boolean;
+  export let ytdlp: string | undefined;
   export let time_jump: number;
   export let current_time: number = 0;
 
@@ -63,18 +64,25 @@
     <button id="use-own-button" class="default-button" on:click={use_own}>Use your own video</button>
     <br>
     <!-- svelte-ignore a11y-media-has-caption -->
-    <video bind:this={video_ele} on:timeupdate={time_update} src="{ video_src }" type="{ vid_type }" controls>
+    <video bind:this={video_ele} on:timeupdate={time_update} src="{ video_src }" controls>
       {#if typeof sub_src === "string"}
         <track kind="captions" src={sub_src} label="Lyrics">
       {/if}
     </video>
   {:else}
-    <p>No video provided for this concert. Use your own?</p>
+    <p>No video provided for this concert (likely due to copyright and/or bandwidth concerns). Use your own?</p>
+    {#if ytdlp}
+      <p>Video can be downloaded with <a target="_blank" href="https://github.com/yt-dlp/yt-dlp#release-files">yt-dlp</a> from url: <code>{ ytdlp }</code></p>
+    {/if}
     <input type="file" accept="video/*" bind:this={video_load_ele} on:change={load_video}/>
   {/if}
 </div>
 
 <style>
+  code {
+    font-family: monospace;
+  }
+
   #use-own-button {
     margin-bottom: 10px;
   }

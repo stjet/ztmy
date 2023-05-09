@@ -1,2 +1,17 @@
 {
+  "nouriueno-cracker": {
+    "jap": "脳裏上のクラッカー",
+    "eng": "Nouriueno Cracker",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "3iAXclHlTTg",
+    "mv": true,
+    "duration": 269,
+    "release": "2018/10/02",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐, 板井直樹"
+  }
 }

@@ -17,6 +17,7 @@ export type ConcertInfo = {
   title: string,
   slug: string,
   subtitle: string,
+  ytdlp: string | undefined,
   thumbnail_url: string,
   description: string,
   images: string[],
@@ -30,4 +31,20 @@ export type Lyric = {
   start: number,
   end: number,
   text: string
+};
+
+export type SongMetadata = {
+  jap: string,
+  eng: string,
+  album: {
+    jap: string,
+    eng: string,
+    image: string
+  },
+  youtube: string,
+  mv: boolean,
+  duration: number,
+  release: string,
+  lyrics: string,
+  arrangement: string
 };

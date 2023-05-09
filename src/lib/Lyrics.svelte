@@ -17,6 +17,7 @@
   //figure out which lyric is the current lyric
   let lyrics_container_ele: HTMLElement;
   let current_index = -1;
+  let prev = -1;
 
   $: {
     let found = false;
@@ -35,7 +36,11 @@
               if (new_scroll < 0) {
                 new_scroll = 0;
               }
-              lyrics_container_ele.scrollTop = new_scroll;
+              //only change scroll if there was change
+              if (prev !== j) {
+                lyrics_container_ele.scrollTop = new_scroll;
+                prev = j;
+              }
               break;
             }
           }

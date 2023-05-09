@@ -5,6 +5,7 @@
 <script lang="ts">
   //imports
   import ConcertsList from '$lib/ConcertsList.svelte';
+  import Navbar from '$lib/Navbar.svelte';
 
   //scroll ele shows by default
   let scroll_ele: HTMLElement;
@@ -14,7 +15,22 @@
       scroll_ele.style.display = "none";
     }
   }
+
+  //handle scrolling showing the concert list and related
+  function wheel_handle(e: WheelEvent) {
+    if (e.deltaY > 0) {
+      scroll_ele_show = false;
+    }
+  }
+
+  function touchend_handle(e: WheelEvent) {
+    scroll_ele_show = false;
+  }
 </script>
+
+<svelte:document on:wheel={wheel_handle} on:touchend={touchend_handle}/>
+
+<Navbar {scroll_ele_show}/>
 
 <div class="main-container">
   <div class="title-container">
@@ -25,13 +41,26 @@
       <span id="scroll-down">&or;</span>
     </div>
   </div>
-  <ConcertsList bind:scroll_ele_show={scroll_ele_show}/>
+  <ConcertsList {scroll_ele_show}/>
 </div>
 
 <noscript>
   <style>
     #scroll-down-container {
       display: none !important;
+    }
+
+    #concert-grid {
+      opacity: 1 !important;
+      display: grid !important;
+    }
+
+    #show-more {
+      display: none;
+    }
+
+    #nav-bar {
+      display: block !important;
     }
   </style>
 </noscript>

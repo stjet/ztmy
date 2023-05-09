@@ -1,0 +1,202 @@
+{
+  "title": "やきやきヤンキーツアー",
+  "slug": "yaki-yaki-yankee",
+  "subtitle": "Yaki Yaki Yankee Tour",
+  "thumbnail_url": "",
+  "description": "",
+  "images": [],
+  "date": "2020/11/29",
+  "sub_src": false,
+  "ytdlp": "https://www.bilibili.com/video/BV1E44y1n77V",
+  "setlist": [
+    {
+      "jap": "自転車",
+      "eng": "Bike",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:00:00", "00:02:00"]
+    },
+    {
+      "jap": "メタル",
+      "eng": "Metal",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:02:01", "00:04:10"]
+    },
+    {
+      "jap": "JK BOMBER",
+      "eng": "JK BOMBER",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:04:11", "00:08:31"]
+    },
+    {
+      "jap": "こんなこと騒動",
+      "eng": "Konnakoto Soudou",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:08:32", "00:10:45"]
+    },
+    {
+      "jap": "勘冴えて悔しいわ",
+      "eng": "Kansaete Kuyashiiwa",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:10:46", "00:12:28"]
+    },
+    {
+      "jap": "低血ボルト",
+      "eng": "Fastening",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:12:29", "00:16:08"]
+    },
+    {
+      "jap": "マイノリティ脈絡",
+      "eng": "Minority Myakuraku",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:16:09", "00:21:15"]
+    },
+    {
+      "jap": "ACAねの話1",
+      "eng": "ACAね's Talk 1",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:21:16", "00:24:15"]
+    },
+    {
+      "jap": "勘ぐれい",
+      "eng": "Hunch Gray",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:24:16", "00:28:27"]
+    },
+    {
+      "jap": "マリンブルーの庭園",
+      "eng": "Marine Blue Garden",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:28:28", "00:33:16"]
+    },
+    {
+      "jap": "雲丹と栗",
+      "eng": "Uni to Kuri",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:33:17", "00:38:50"]
+    },
+    {
+      "jap": "Ham",
+      "eng": "Ham",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:38:51", "00:43:30"]
+    },
+    {
+      "jap": "サターン",
+      "eng": "Saturn",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:43:31", "00:49:20"]
+    },
+    {
+      "jap": "MILABO",
+      "eng": "MILABO",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:49:21", "00:53:50"]
+    },
+    {
+      "jap": "ACAねの話2",
+      "eng": "ACAね's Talk 2",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:53:51", "00:55:45"]
+    },
+    {
+      "jap": "Dear Mr 「F」",
+      "eng": "Dear Mr 「F」",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:55:46", "01:01:20"]
+    },
+    {
+      "jap": "眩しいDNAだけ",
+      "eng": "Mabushii DNA Dake",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:01:21", "01:05:50"]
+    },
+    {
+      "jap": "秒針を噛む",
+      "eng": "Byoushin wo Kamu",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:05:51", "01:11:13"]
+    },
+    {
+      "jap": "正義",
+      "eng": "Justice",
+      "youtube": "https://www.youtube.com/watch?v=toiX8Wio6fQ",
+      "song": true,
+      "timestamp": ["01:11:14", "01:16:23"]
+    },
+    {
+      "jap": "ACAねの話3",
+      "eng": "ACAね's Talk 3",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:16:24", "00:17:26"]
+    },
+    {
+      "jap": "脳裏上のクラッカー",
+      "eng": "Nouriueno Cracker",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:17:27", "01:24:15"]
+    },
+    {
+      "jap": "休み",
+      "eng": "Break",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:24:16", "01:25:30"]
+    },
+    {
+      "jap": "暗く黒く",
+      "eng": "Darken",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:25:31", "01:30:18"]
+    },
+    {
+      "jap": "ACAねの話4",
+      "eng": "ACAね's Talk 4",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:30:19", "00:32:00"]
+    },
+    {
+      "jap": "正しくなれない",
+      "eng": "Can't be Right",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:32:01", "01:36:10"]
+    },
+    {
+      "jap": "お勉強しといてよ",
+      "eng": "Study Me",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:36:11", "01:41:17"]
+    },
+    {
+      "jap": "今日のバンドメンバー",
+      "eng": "Today's Band Members",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:41:18", "01:42:58"]
+    }
+  ]
+}
