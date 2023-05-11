@@ -2,6 +2,7 @@
   //imports
   import type { SongMetadata } from '$lib/types.ts';
   import YoutubeEmbed from '$lib/YoutubeEmbed.svelte';
+  import { duration_to_string } from '$lib/utils.ts';
 
   //exports
   export let data;
@@ -9,6 +10,10 @@
   //get song metadata
   const song_metadata: SongMetadata = data.song_metadata;
 </script>
+
+<svelte:head>
+  <title>{song_metadata.jap} - ZUTOMAYO</title>
+</svelte:head>
 
 <div id="song-grid">
   <div>
@@ -18,7 +23,7 @@
     <br>
     <span>Release Date: {song_metadata.release}</span>
     <br>
-    <span>Duration: {Math.floor(song_metadata.duration/60)}:{String(song_metadata.duration%60).length === 2 ? song_metadata.duration%60 : "0"+String(song_metadata.duration%60)}</span>
+    <span>Duration: {duration_to_string(song_metadata.duration)}</span>
     <br>
     <span>Lyrics Credit: {song_metadata.lyrics}</span>
     <br>

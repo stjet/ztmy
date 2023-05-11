@@ -48,3 +48,13 @@ export type SongMetadata = {
   lyrics: string,
   arrangement: string
 };
+
+export enum SearchOptions {
+  AllQuery,
+  TitleQuery,
+  AlbumQuery,
+  NewestSort,
+  OldestSort,
+  LongestSort,
+  ShortestSort
+}

@@ -299,3 +299,43 @@ export function hiragana_to_romaji(hiragana: string): string {
   }
   return romaji;
 }
+
+export function eng_song_to_slug(eng_song: string): string {
+  eng_song = eng_song.toLowerCase().trim();
+  let strip_chars = ["「", "」", "'"];
+  for (let i=0; i < strip_chars.length; i++) {
+    eng_song = eng_song.replaceAll(strip_chars[i], "");
+  }
+  return eng_song.replaceAll(" ", "-");
+}
+
+export function duration_to_string(duration: number): string {
+  return String(Math.floor(duration/60)) + ":" + (String(duration%60).length === 2 ? String(duration%60) : "0"+String(duration%60));
+}
+
+//returns true if date1 is more recent, false otherwise
+export function more_recent_date_string(date1: string, date2: string): boolean {
+  date1 = date1.replace("?", "");
+  date2 = date2.replace("?", "");
+  let year1 = Number(date1.split("/")[0]);
+  let year2 = Number(date2.split("/")[0]);
+  if (year1 > year2) {
+    return true;
+  } else if (year1 < year2) {
+    return false;
+  }
+  let month1 = Number(date1.split("/")[1]);
+  let month2 = Number(date2.split("/")[1]);
+  if (month1 > month2) {
+    return true;
+  } else if (month1 < month2) {
+    return false;
+  }
+  let day1 = Number(date1.split("/")[2]);
+  let day2 = Number(date2.split("/")[2]);
+  if (day1 > day2) {
+    return true;
+  } else {
+    return false;
+  }
+}

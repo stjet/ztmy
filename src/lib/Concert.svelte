@@ -8,7 +8,7 @@
 </script>
 
 <article class="{ show ? 'concert' : 'concert hide'}">
-  <h2 class="concert-title"><a href={"concert/"+slug}>{title}</a></h2>
+  <h2 class="concert-title"><a href={"concerts/"+slug}>{title}</a></h2>
   <span>{subtitle}</span>
 </article>
 

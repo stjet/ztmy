@@ -13,5 +13,245 @@
     "release": "2018/10/02",
     "lyrics": "ACAね",
     "arrangement": "100回嘔吐, 板井直樹"
+  },
+  "kansaete-kuyashiiwa": {
+    "jap": "勘冴えて悔しいわ",
+    "eng": "Kansaete Kuyashiiwa",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "4QePrv24TBU",
+    "mv": true,
+    "duration": 238,
+    "release": "2019/6/5",
+    "lyrics": "ACAね",
+    "arrangement": "ACAね, ラムシーニ"
+  },
+  "inemuri-ensetai": {
+    "jap": "居眠り遠征隊",
+    "eng": "Inemuri Ensetai",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "n5xGJHErs_A",
+    "mv": false,
+    "duration": 218,
+    "release": "2019/10/30",
+    "lyrics": "ACAね",
+    "arrangement": "Kenichiro Nishihara"
+  },
+  "haze-haseru-haterumade": {
+    "jap": "ハゼ馳せる果てるまで",
+    "eng": "Haze Haseru Haterumade",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "ElnxZtiBDvs",
+    "mv": true,
+    "duration": 244,
+    "release": "2019/10/18",
+    "lyrics": "ACAね",
+    "arrangement": "ぬゆり"
+  },
+  "kettobashita-moufu": {
+    "jap": "蹴っ飛ばした毛布",
+    "eng": "Kettobashita Moufu",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "iyCRK5WfFOI",
+    "mv": true,
+    "duration": 266,
+    "release": "2019/10/02",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "dear-mr-f": {
+    "jap": "Dear Mr 「F」",
+    "eng": "Dear Mr 「F」",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "Qw-FSw7d2zE",
+    "mv": true,
+    "duration": 329,
+    "release": "2019/10/30?",
+    "lyrics": "ACAね",
+    "arrangement": "村山☆潤"
+  },
+  "konnakoto-soudou": {
+    "jap": "こんなこと騒動",
+    "eng": "Konnakoto Soudou",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "mlA-Z7zSLHU",
+    "mv": true,
+    "duration": 297,
+    "release": "2019/10/09",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "mabushii-dna-dake": {
+    "jap": "眩しいDNAだけ",
+    "eng": "Mabushii DNA Dake",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "VJy8qZ77bpE",
+    "mv": true,
+    "duration": 227,
+    "release": "2019/02/27",
+    "lyrics": "ACAね",
+    "arrangement": "ぬゆり"
+  },
+  "humanoid": {
+    "jap": "ヒューマノイド",
+    "eng": "Humanoid",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "GAB26GgJ8V8",
+    "mv": true,
+    "duration": 259,
+    "release": "2018/11/07",
+    "lyrics": "ACAね",
+    "arrangement": "関口晶大, ラムシーニ, Naoki Itai"
+  },
+  "glass-to-rum-raisin": {
+    "jap": "グラスとラムレーズン",
+    "eng": "Glass To Rum Raisin",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "8FH4cBJ1y-E",
+    "mv": false,
+    "duration": 234,
+    "release": "2019/10/30",
+    "lyrics": "ACAね",
+    "arrangement": "春野"
+  },
+  "justice": {
+    "jap": "正義",
+    "eng": "Justice",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "7kUbX4DoZoc",
+    "mv": true,
+    "duration": 271,
+    "release": "2019/05/22",
+    "lyrics": "ACAね",
+    "arrangement": "久保田真悟 (Jazzin' Park)"
+  },
+  "yasashiku-last-smile": {
+    "jap": "優しくLAST SMILE",
+    "eng": "Yasashiku Last Smile",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "00GDulz0q8w",
+    "mv": false,
+    "duration": 245,
+    "release": "2019/10/30?",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "byoushin-wo-kamu": {
+    "jap": "秒針を噛む",
+    "eng": "Byoushin wo Kamu",
+    "album": {
+      "jap": "潜潜話",
+      "eng": "Hisohiso Banashi",
+      "image": "/albums/hisohiso-banashi.png"
+    },
+    "youtube": "GJI4Gv7NbmE",
+    "mv": true,
+    "duration": 259,
+    "release": "2018/08/30",
+    "lyrics": "ACAね",
+    "arrangement": "ぬゆり"
+  },
+  "saturn": {
+    "jap": "サターン",
+    "eng": "Saturn",
+    "album": {
+      "jap": "正しい偽りからの起床",
+      "eng": "Tadashii Itsuwarikarano Kishou",
+      "image": "/albums/tadashii-itsuwarikarano-kishou.png"
+    },
+    "youtube": "ubrovjZUi64",
+    "mv": true,
+    "duration": 249,
+    "release": "2018/11/14",
+    "lyrics": "ACAね",
+    "arrangement": "久保田真悟"
+  },
+  "uni-to-kuri": {
+    "jap": "雲丹と栗",
+    "eng": "Uni to Kuri",
+    "album": {
+      "jap": "正しい偽りからの起床",
+      "eng": "Tadashii Itsuwarikarano Kishou",
+      "image": "/albums/tadashii-itsuwarikarano-kishou.png"
+    },
+    "youtube": "OtF5VtmhjnQ",
+    "mv": false,
+    "duration": 272,
+    "release": "2018/11/14",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "kimigaite-mizuninaru": {
+    "jap": "君がいて水になる",
+    "eng": "Kimigaite Mizuninaru",
+    "album": {
+      "jap": "正しい偽りからの起床",
+      "eng": "Tadashii Itsuwarikarano Kishou",
+      "image": "/albums/tadashii-itsuwarikarano-kishou.png"
+    },
+    "youtube": "8jZ8Plz_SSM",
+    "mv": false,
+    "duration": 285,
+    "release": "2018/11/14",
+    "lyrics": "ACAね",
+    "arrangement": "有機酸"
+  },
+  "matane-maboroshi": {
+    "jap": "またね幻",
+    "eng": "Matane Maboroshi",
+    "album": {
+      "jap": "今は今で誓いは笑みで",
+      "eng": "Imawa Imade Chikaiwa Emide",
+      "image": "/albums/tadashii-itsuwarikarano-kishou.png"
+    },
+    "youtube": "6PpOOKEGX-4",
+    "mv": false,
+    "duration": 242,
+    "release": "2019/06/12?",
+    "lyrics": "ACAね",
+    "arrangement": "加藤冴人, 100回嘔吐"
   }
 }

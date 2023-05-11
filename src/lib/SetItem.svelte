@@ -1,6 +1,6 @@
 <script lang="ts">
   //imports
-  import { convert_timestamp } from '$lib/utils.ts';
+  import { convert_timestamp, eng_song_to_slug } from '$lib/utils.ts';
 
   //exports
   export let lang: string;
@@ -33,13 +33,13 @@
 
 <div class="{ current_song ? 'current-song setitem-container' : 'setitem-container' }">
   <h3>
-    {#if lang == "jap"}{ jap }{:else}{ eng }{/if}
+    {#if typeof youtube == "string"}
+      <a href="{youtube}">{#if lang == "jap"}{ jap }{:else}{ eng }{/if}</a>
+    {:else}
+      {#if lang == "jap"}{ jap }{:else}{ eng }{/if}
+    {/if}
     {#if song}
-      {#if typeof youtube == "string"}
-        <span class="is-song"><a href={youtube}>{#if lang == "jap"}歌{:else}Song{/if}</a></span>
-      {:else}
-        <span class="is-song">{#if lang == "jap"}歌{:else}Song{/if}</span>
-      {/if}
+      <a class="is-song" href="/songs/{eng_song_to_slug(eng)}">{#if lang == "jap"}歌{:else}Song{/if}</a>
     {/if}
   </h3>
   <p>
@@ -65,13 +65,9 @@
     margin-bottom: 0.2em;
     padding: 3px;
     background-color: #efefef;
-    color: #312f33;
+    color: #312f33 !important;
+    text-decoration: none;
     border-radius: 5px;
-  }
-
-  .is-song a {
-    color: #312f33;
-    cursor: pointer;
   }
 
   .vid-timestamp {
