@@ -5,6 +5,7 @@
   import LangToggle from '$lib/LangToggle.svelte';
   import Video from '$lib/Video.svelte';
   import Lyrics from '$lib/Lyrics.svelte';
+  import OffsetInput from '$lib/OffsetInput.svelte';
   import concerts_metadata from '$lib/data/concerts/concerts_metadata.json';
   import type { ConcertInfo } from '$lib/types.ts';
   
@@ -19,9 +20,10 @@
 
   //variables
   let lang: string = "eng";
-  let time_jump = -1;
-  let current_time = 0;
-  
+  let time_jump: number = -1;
+  let current_time: number = 0;
+  let offset: number = 0;
+
   //toggle info
   let show_info = false;
 
@@ -78,7 +80,7 @@
       <div id="setlist" class="{ show_info ? 'smaller-setlist' : '' }">
         <ol>
           {#each concert_info.setlist as set_item}
-            <li><SetItem {...set_item} {lang} {current_time} bind:time_jump={time_jump}/></li>
+            <li><SetItem {...set_item} {lang} {current_time} {offset} bind:time_jump={time_jump}/></li>
           {/each}
         </ol>
       </div>
@@ -87,12 +89,17 @@
       <h2>Video</h2>
       <div>
         <Video {video_src} sub_src={concert_info.sub_src} ytdlp={concert_info.ytdlp} {time_jump} bind:current_time={current_time}/>
+        <OffsetInput bind:offset={offset}/>     
       </div>
     </div>
     <div>
-      <h2>Lyrics</h2>
+      {#if lang == "jap"}
+        <h2>歌詞</h2>
+      {:else}
+        <h2>Lyrics</h2>
+      {/if}
       <div>
-        <Lyrics lyrics={lyrics_text} {current_time} {lang}/>
+        <Lyrics lyrics={lyrics_text} {current_time} {lang} {offset}/>
       </div>
     </div>
   </div>

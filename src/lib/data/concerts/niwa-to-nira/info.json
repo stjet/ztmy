@@ -1,0 +1,27 @@
+{
+  "title": "Online Live: Niwa to Nira",
+  "slug": "niwa-to-nira",
+  "subtitle": "闇なべ魔法専門店",
+  "thumbnail_url": "",
+  "description": "",
+  "images": [],
+  "date": "2021/08/06",
+  "sub_src": false,
+  "ytdlp": "https://www.bilibili.com/video/BV1nA411P7WW",
+  "setlist": [
+    {
+      "jap": "やかん",
+      "eng": "Kettle",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:00:00", "00:03:50"]
+    },
+    {
+      "jap": "料理",
+      "eng": "Cooking",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:03:51", "00:05:41"]
+    }
+  ]
+}

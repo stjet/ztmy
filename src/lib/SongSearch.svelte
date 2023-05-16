@@ -79,6 +79,7 @@
   @media screen and (max-width: 1000px) {
     #song-search {
       width: 70vw;
+      margin: 0;
     }
   }
 </style>

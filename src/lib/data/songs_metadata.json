@@ -253,5 +253,455 @@
     "release": "2019/06/12?",
     "lyrics": "ACAね",
     "arrangement": "加藤冴人, 100回嘔吐"
+  },
+  "minority-myakuraku": {
+    "jap": "マイノリティ脈絡",
+    "eng": "Minority Myakuraku",
+    "album": {
+      "jap": "今は今で誓いは笑みで",
+      "eng": "Imawa Imade Chikaiwa Emide",
+      "image": "/albums/tadashii-itsuwarikarano-kishou.png"
+    },
+    "youtube": "v43Ke1W7zb4",
+    "mv": false,
+    "duration": 300,
+    "release": "2019/06/12?",
+    "lyrics": "ACAね",
+    "arrangement": "煮ル果実"
+  },
+  "samayoi-yoi-ondo": {
+    "jap": "彷徨い酔い温度",
+    "eng": "Samayoi Yoi Ondo",
+    "album": {
+      "jap": "今は今で誓いは笑みで",
+      "eng": "Imawa Imade Chikaiwa Emide",
+      "image": "/albums/tadashii-itsuwarikarano-kishou.png"
+    },
+    "youtube": "SPam1BBKUjQ",
+    "mv": false,
+    "duration": 292,
+    "release": "2019/06/12?",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐, Open Reel Ensemble"
+  },
+  "ham": {
+    "jap": "Ham",
+    "eng": "Ham",
+    "album": {
+      "jap": "朗らかな皮膚とて不服",
+      "eng": "Hogarakana Hifutote Fufuku",
+      "image": "/albums/hogarakana-hifutote-fufuku.png"
+    },
+    "youtube": "ouLndhBRL4w",
+    "mv": true,
+    "duration": 220,
+    "release": "2020/08/05?",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "jk-bomber": {
+    "jap": "JK BOMBER",
+    "eng": "JK BOMBER",
+    "album": {
+      "jap": "朗らかな皮膚とて不服",
+      "eng": "Hogarakana Hifutote Fufuku",
+      "image": "/albums/hogarakana-hifutote-fufuku.png"
+    },
+    "youtube": "g3N3czs2U9s",
+    "mv": false,
+    "duration": 235,
+    "release": "2020/08/05?",
+    "lyrics": "ACAね",
+    "arrangement": "煮ル果実"
+  },
+  "marine-blue-garden": {
+    "jap": "マリンブルーの庭園",
+    "eng": "Marine Blue Garden",
+    "album": {
+      "jap": "朗らかな皮膚とて不服",
+      "eng": "Hogarakana Hifutote Fufuku",
+      "image": "/albums/hogarakana-hifutote-fufuku.png"
+    },
+    "youtube": "CBJ8Fre_SRk",
+    "mv": false,
+    "duration": 214,
+    "release": "2020/08/05?",
+    "lyrics": "ACAね",
+    "arrangement": "煮ル果実"
+  },
+  "ones-mind": {
+    "jap": "胸の煙",
+    "eng": "One's Mind",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "wQPgM-9LatM",
+    "mv": true,
+    "duration": 249,
+    "release": "2021/02/10?",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "cant-be-right": {
+    "jap": "正しくなれない",
+    "eng": "Can't be Right",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "Atvsg_zogxo",
+    "mv": true,
+    "duration": 240,
+    "release": "2020/12/17",
+    "lyrics": "ACAね",
+    "arrangement": "久保田真悟 (Jazzin'park), 100回嘔吐"
+  },
+  "study-me": {
+    "jap": "お勉強しといてよ",
+    "eng": "Study Me",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "Atvsg_zogxo",
+    "mv": true,
+    "duration": 289,
+    "release": "2020/05/15",
+    "lyrics": "ACAね",
+    "arrangement": "矢野達也, 100回嘔吐"
+  },
+  "hunch-gray": {
+    "jap": "勘ぐれい",
+    "eng": "Hunch Gray",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "ugpywe34_30",
+    "mv": true,
+    "duration": 249,
+    "release": "2020/11/27",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "have-a": {
+    "jap": "はゔぁ",
+    "eng": "Have A",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "Ws4OaBFAa_s",
+    "mv": false,
+    "duration": 218,
+    "release": "2020/11/27",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "engine-oil": {
+    "jap": "機械油",
+    "eng": "Engine Oil",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "_JdiIp92rYk",
+    "mv": false,
+    "duration": 206,
+    "release": "2021/02/10?",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐, Open Reel Ensemble"
+  },
+  "darken": {
+    "jap": "暗く黒く",
+    "eng": "Darken",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "dcOwj-QE_ZE",
+    "mv": true,
+    "duration": 249,
+    "release": "2020/11/03",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "milabo": {
+    "jap": "MILABO",
+    "eng": "MILABO",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "I88PrE-KUPk",
+    "mv": true,
+    "duration": 269,
+    "release": "2020/07/13",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "loneliness": {
+    "jap": "ろんりねす",
+    "eng": "Loneliness",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "h5CpUsC3Xi8",
+    "mv": false,
+    "duration": 293,
+    "release": "2021/02/10?",
+    "lyrics": "ACAね",
+    "arrangement": "Kenichiro Nishihara and the Jazcrafts"
+  },
+  "crop": {
+    "jap": "繰り返す収穫",
+    "eng": "Crop",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "AIB36neGqt4",
+    "mv": false,
+    "duration": 234,
+    "release": "2021/02/10?",
+    "lyrics": "ACAね",
+    "arrangement": "久保田真悟 (Jazzin'park)"
+  },
+  "hypersomnia": {
+    "jap": "過眠",
+    "eng": "Hypersomnia",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "4tDBohUTYAk",
+    "mv": false,
+    "duration": 253,
+    "release": "2021/02/10?",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "fastening": {
+    "jap": "低血ボルト",
+    "eng": "Fastening",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "COll6PdtI5w",
+    "mv": true,
+    "duration": 214,
+    "release": "2020/08/05?",
+    "lyrics": "ACAね",
+    "arrangement": "関内昌大, 出口遼"
+  },
+  "inner-heart": {
+    "jap": "奥底に眠るルーツ",
+    "eng": "Inner Heart",
+    "album": {
+      "jap": "ぐされ",
+      "eng": "Gusare",
+      "image": "/albums/gusare.png"
+    },
+    "youtube": "o7jp25p-ZWU",
+    "mv": false,
+    "duration": 263,
+    "release": "2021/02/10?",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "flow-different": {
+    "jap": "違う曲にしようよ",
+    "eng": "Flow Different",
+    "album": {
+      "jap": "伸び仕草懲りて暇乞い",
+      "eng": "Nobi Shigusa Korite Itomagoi",
+      "image": "/albums/nobi-shigusa-korite-itomagoi.png"
+    },
+    "youtube": "YCn_pu5E1kI",
+    "mv": false,
+    "duration": 219,
+    "release": "2022/02/16",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "kisumi-at-midnight": {
+    "jap": "夜中のキスミ",
+    "eng": "Kisumi at Midnight",
+    "album": {
+      "jap": "伸び仕草懲りて暇乞い",
+      "eng": "Nobi Shigusa Korite Itomagoi",
+      "image": "/albums/nobi-shigusa-korite-itomagoi.png"
+    },
+    "youtube": "zruIvqmwSIs",
+    "mv": false,
+    "duration": 247,
+    "release": "2022/02/16",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "time-left": {
+    "jap": "残機",
+    "eng": "Time Left",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "OMhVQLBNyGs",
+    "mv": false,
+    "duration": 230,
+    "release": "2022/10/19",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "kira-killer": {
+    "jap": "綺羅キラー (feat. Mori Calliope)",
+    "eng": "Kira Killer",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "OMhVQLBNyGs",
+    "mv": false,
+    "duration": 254,
+    "release": "2022/12/15",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "inside-joke": {
+    "jap": "あいつら全員同窓会",
+    "eng": "Inside Joke",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "ZUwaudw8ht0",
+    "mv": true,
+    "duration": 255,
+    "release": "2021/06/18",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "stay-foolish": {
+    "jap": "ばかじゃないのに",
+    "eng": "Stay Foolish",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "YgmFIVOR1-I",
+    "mv": true,
+    "duration": 258,
+    "release": "2021/07/04",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐, 新田目駿, 矢野達也"
+  },
+  "neko-reset": {
+    "jap": "猫リセット",
+    "eng": "Neko Reset",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "Sfz5TpCRSiI",
+    "mv": false,
+    "duration": 247,
+    "release": "2021/12/02",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "quilt": {
+    "jap": "袖のキルト",
+    "eng": "QUILT",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "9PnCSI8ndws",
+    "mv": false,
+    "duration": 247,
+    "release": "2021/12/02",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "mirror-tune": {
+    "jap": "ミラーチューン",
+    "eng": "Mirror Tune",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "SBb3VhkkwBo",
+    "mv": false,
+    "duration": 249,
+    "release": "2022/04/07",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "blush": {
+    "jap": "消えてしまいそうです",
+    "eng": "Blush",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "OxcnK1s2Fww",
+    "mv": true,
+    "duration": 257,
+    "release": "2022/04/07",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "summer-slack": {
+    "jap": "夏枯れ",
+    "eng": "Summer Slack",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "eWWk-2rbjDM",
+    "mv": false,
+    "duration": 236,
+    "release": "2022/04/07",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
+  },
+  "intrusion": {
+    "jap": "不法侵入",
+    "eng": "Intrusion",
+    "album": {
+      "jap": "沈香学",
+      "eng": "Jinkougaku",
+      "image": "/albums/jinkougaku.png"
+    },
+    "youtube": "SAdkxVFyAyc",
+    "mv": true,
+    "duration": 263,
+    "release": "2023/05/15",
+    "lyrics": "ACAね",
+    "arrangement": "100回嘔吐"
   }
 }

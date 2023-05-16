@@ -52,6 +52,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 84vh 12vh;
+    padding-left: 10px;
   }
 
   #album-cover {

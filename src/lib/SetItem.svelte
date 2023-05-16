@@ -1,6 +1,6 @@
 <script lang="ts">
   //imports
-  import { convert_timestamp, eng_song_to_slug } from '$lib/utils.ts';
+  import { convert_timestamp, deconvert_timestamp, eng_song_to_slug } from '$lib/utils.ts';
 
   //exports
   export let lang: string;
@@ -8,11 +8,21 @@
   export let eng: string;
   export let youtube: string | boolean;
   export let song: boolean;
-  export let timestamp: string[2];
+  export let timestamp: string[]; //string[2]
   export let current_time: number;
   export let time_jump: number;
+  export let offset: number;
 
   let current_song = false;
+
+  let og_timestamp = timestamp;
+
+  $: {
+    if (offset !== 0) {
+      //timestamps are in seconds
+      timestamp = [deconvert_timestamp(convert_timestamp(og_timestamp[0])+offset), deconvert_timestamp(convert_timestamp(og_timestamp[1])+offset)];
+    }
+  }
 
   //change video seconds if timestamp clicked
   function change_timestamp(event: MouseEvent) {

@@ -26,6 +26,28 @@ export function convert_timestamp(string_timestamp: string) {
   return hours*60*60+minutes*60+seconds;
 }
 
+//number timestamp to string timestamp
+export function deconvert_timestamp(timestamp: number) {
+  if (timestamp < 0) {
+    return "00:00:00";
+  }
+  let hours: string = String(Math.floor(timestamp/(60*60)));
+  hours = hours.length >= 2 ? hours : "0"+hours;
+  let minutes: string = String(Math.floor((timestamp%(60*60))/60));
+  minutes = minutes.length == 2 ? minutes : "0"+minutes;
+  let seconds: string = String(timestamp%60);
+  if (seconds.includes(".")) {
+    //is decimal
+    if (seconds.split(".")[0].length === 1) {
+      seconds = "0"+seconds;
+    }
+    seconds = seconds.split(".")[0]+"."+seconds.split(".")[1][0]+"00";
+  } else {
+    seconds = seconds.length == 2 ? seconds : "0"+seconds;
+  }
+  return `${hours}:${minutes}:${seconds}`;
+}
+
 export function lyric_to_html(lyric: string): string {
   let splitted: string[] = lyric.split("[");
   //trust me typescript, .shift() will not be undefined
@@ -138,6 +160,7 @@ function katakana_to_hiragana(mixed: string): string {
     "ワ": "わ",
     "ヲ": "を",
     "ン": "ん",
+    "ヴ": "ゔ",
     "ガ": "が",
     "ギ": "ぎ",
     "グ": "ぐ",
@@ -237,6 +260,7 @@ export function hiragana_to_romaji(hiragana: string): string {
     "わ": "wa",
     "を": "wo",
     "ん": "nn",
+    "ゔ": "vu",
     "が": "ga",
     "ぎ": "gi",
     "ぐ": "gu",

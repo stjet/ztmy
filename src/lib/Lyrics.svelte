@@ -1,12 +1,13 @@
 <script lang="ts">
   //imports
-  import { parse_lyrics, lyric_to_html, extract_hiragana, hiragana_to_romaji } from '$lib/utils.ts';
+  import { convert_timestamp, deconvert_timestamp, parse_lyrics, lyric_to_html, extract_hiragana, hiragana_to_romaji } from '$lib/utils.ts';
   import type { Lyric } from '$lib/types.ts';
 
   //exports
   export let lyrics: string | boolean;
   export let current_time: number;
   export let lang: string;
+  export let offset: number;
 
   //parse lyrics
   let parsed_lyrics: Lyric[];
@@ -24,14 +25,17 @@
     if (parsed_lyrics) {
       for (let i=0; i < parsed_lyrics.length; i++) {
         let i_lyric = parsed_lyrics[i];
-        if (current_time > i_lyric.start && current_time < i_lyric.end) {
+        let start = i_lyric.start+offset;
+        let end = i_lyric.end+offset;
+        if (current_time > start && current_time < end) {
+          console.log("found", i)
           found = true;
           current_index = i;
           //scroll into view
           let children = lyrics_container_ele.childNodes;
           for (let j=0; j < children.length; j++) {
             let child = children[j] as HTMLElement;
-            if (child.title === `${i_lyric.timestamps[0]} - ${i_lyric.timestamps[1]}`) {
+            if (child.title === `${deconvert_timestamp(convert_timestamp(i_lyric.timestamps[0])+offset)} - ${deconvert_timestamp(convert_timestamp(i_lyric.timestamps[1])+offset)}`) {
               let new_scroll: number = child.offsetTop - Math.round(lyrics_container_ele.clientHeight/2);
               if (new_scroll < 0) {
                 new_scroll = 0;
@@ -71,7 +75,7 @@
   {#if typeof lyrics === "string"}
     <div id="lyrics-container" bind:this={lyrics_container_ele} on:scroll={change_mask} style:mask>
       {#each parsed_lyrics as lyric, index}
-        <p class="{ index == current_index ? 'current-lyric lyric' : 'lyric'}" title="{lyric.timestamps[0]} - {lyric.timestamps[1]}">
+        <p class="{ index == current_index ? 'current-lyric lyric' : 'lyric'}" title="{deconvert_timestamp(convert_timestamp(lyric.timestamps[0])+offset)} - {deconvert_timestamp(convert_timestamp(lyric.timestamps[1])+offset)}">
           {#if lang === "eng"}
             { hiragana_to_romaji(extract_hiragana(lyric.text)) }
           {:else}

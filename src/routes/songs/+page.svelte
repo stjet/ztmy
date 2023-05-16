@@ -116,7 +116,7 @@
   }
 
   #search-container {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   @media screen and (max-width: 1000px) {
