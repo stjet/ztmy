@@ -325,6 +325,10 @@ export function hiragana_to_romaji(hiragana: string): string {
 }
 
 export function eng_song_to_slug(eng_song: string): string {
+  if (eng_song.includes("(")) {
+    //anything in parenthesis is not part of song name
+    eng_song = eng_song.split("(")[0];
+  }
   eng_song = eng_song.toLowerCase().trim();
   let strip_chars = ["「", "」", "'"];
   for (let i=0; i < strip_chars.length; i++) {

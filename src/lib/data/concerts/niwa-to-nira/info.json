@@ -22,6 +22,118 @@
       "youtube": false,
       "song": false,
       "timestamp": ["00:03:51", "00:05:41"]
+    },
+    {
+      "jap": "眩しいDNAだけ",
+      "eng": "Mabushii DNA Dake",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:05:42", "00:09:47"]
+    },
+    {
+      "jap": "お勉強しといてよ",
+      "eng": "Study Me",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:09:48", "00:14:50"]
+    },
+    {
+      "jap": "ヒューマノイド",
+      "eng": "Humanoid",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:14:51", "00:19:17"]
+    },
+    {
+      "jap": "休み",
+      "eng": "Break",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:19:18", "00:21:20"]
+    },
+    {
+      "jap": "マリンブルーの庭園",
+      "eng": "Marine Blue Garden",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:21:21", "00:25:49"]
+    },
+    {
+      "jap": "君がいて水になる",
+      "eng": "Kimigaite Mizuninaru",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:25:50", "00:29:25"]
+    },
+    {
+      "jap": "食べ物",
+      "eng": "Food",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:29:26", "00:30:22"]
+    },
+    {
+      "jap": "彷徨い酔い温度",
+      "eng": "Samayoi Yoi Ondo",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:30:23", "00:37:06"]
+    },
+    {
+      "jap": "食べ物とディスコ",
+      "eng": "Food and Disco",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:37:07", "00:41:32"]
+    },
+    {
+      "jap": "MILABO",
+      "eng": "MILABO",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:41:33", "00:46:01"]
+    },
+    {
+      "jap": "ACAねの話",
+      "eng": "ACAね's Talk",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:46:02", "00:47:50"]
+    },
+    {
+      "jap": "秒針を噛む",
+      "eng": "Byoushin wo Kamu",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:47:51", "00:53:07"]
+    },
+    {
+      "jap": "低血ボルト",
+      "eng": "Fastening",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:53:08", "00:56:40"]
+    },
+    {
+      "jap": "マイノリティ脈絡",
+      "eng": "Minority Myakuraku",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:56:41", "01:01:43"]
+    },
+    {
+      "jap": "正義",
+      "eng": "Justice",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:01:44", "01:09:42"]
+    },
+    {
+      "jap": "今日のバンドメンバー",
+      "eng": "Today's Band Members",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:09:43", "01:11:54"]
     }
   ]
 }

@@ -10,7 +10,7 @@ export type SetItem = {
   eng: string,
   youtube: string | boolean,
   song: boolean,
-  timestamp: string[2]
+  timestamp: string[]
 }
 
 export type ConcertInfo = {
@@ -47,6 +47,12 @@ export type SongMetadata = {
   release: string,
   lyrics: string,
   arrangement: string
+};
+
+export type SongInConcert = {
+  title: string,
+  slug: string,
+  timestamp: string[]
 };
 
 export enum SearchOptions {

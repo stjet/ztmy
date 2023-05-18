@@ -12,7 +12,7 @@
     height: 490px;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 900px) {
     iframe {
       width: 330px;
       height: 210px;

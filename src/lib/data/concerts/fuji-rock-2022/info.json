@@ -5,9 +5,100 @@
   "thumbnail_url": "",
   "description": "",
   "images": [],
-  "date": "2021/08/06",
+  "date": "2022/07/31",
   "sub_src": false,
   "ytdlp": "https://www.bilibili.com/video/BV14d4y1U7HR",
   "setlist": [
+    {
+      "jap": "初め",
+      "eng": "Intro",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:00:00", "00:02:10"]
+    },
+    {
+      "jap": "JK Bomber",
+      "eng": "JK Bomber",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:02:11", "00:06:25"]
+    },
+    {
+      "jap": "違う曲にしようよ",
+      "eng": "Flow Different",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:06:26", "00:10:08"]
+    },
+    {
+      "jap": "お勉強しといてよ",
+      "eng": "Study Me",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:10:09", "00:15:22"]
+    },
+    {
+      "jap": "秒針を噛む",
+      "eng": "Byoushin wo Kamu",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:15:23", "00:19:55"]
+    },
+    {
+      "jap": "マリンブルーの庭園",
+      "eng": "Marine Blue Garden",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:19:56", "00:25:12"]
+    },
+    {
+      "jap": "勘ぐれい",
+      "eng": "Hunch Gray",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:25:13", "00:29:41"]
+    },
+    {
+      "jap": "眩しいDNAだけ",
+      "eng": "Mabushii DNA Dake",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:29:42", "00:34:14"]
+    },
+    {
+      "jap": "マイノリティ脈絡",
+      "eng": "Minority Myakuraku",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:34:15", "00:39:17"]
+    },
+    {
+      "jap": "ミラーチューン",
+      "eng": "Mirror Tune",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:39:18", "00:43:37"]
+    },
+    {
+      "jap": "正義",
+      "eng": "Justice",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:43:38", "00:51:15"]
+    },
+    {
+      "jap": "ACAねの話",
+      "eng": "ACAね's Talk",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:51:16", "00:52:19"]
+    },
+    {
+      "jap": "あいつら全員同窓会",
+      "eng": "Inside Joke",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:52:20", "00:57:26"]
+    }
   ]
 }
