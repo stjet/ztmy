@@ -15,8 +15,13 @@
   //get concert info
   const slug: string = data.slug;
   const concert_info: ConcertInfo = data.concert_info;
-  const video_src: string | boolean = data.video_src;
+  let video_src: string | boolean = data.video_src;
   const lyrics_text: string | boolean = data.lyrics_text;
+  const default_video_src: string | null = data.default_video_src;
+
+  if (default_video_src) {
+    video_src = default_video_src;
+  }
 
   //variables
   let lang: string = "eng";
@@ -116,6 +121,16 @@
     scrollbar-color: #A6A6A6 #efefef;
     scrollbar-width: thin;
     padding-right: 7px;
+  }
+
+  /* manage scrollbar for chromium/safari too */
+  #setlist::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  #setlist::-webkit-scrollbar-thumb {
+    background: #868686;
   }
 
   .smaller-setlist {

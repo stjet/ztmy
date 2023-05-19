@@ -18,3 +18,5 @@ package-lock.json
 jsconfig.json
 tsconfig.json
 /src/lib/data/video_config.json
+target
+Cargo.lock

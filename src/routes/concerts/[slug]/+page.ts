@@ -7,7 +7,7 @@ const video_srcs: {[slug: string]: string} = video_config.src;
 
 const concerts_info = import.meta.glob('$lib/data/concerts/**/*.json');
 
-export async function load({ params, fetch }) {
+export async function load({ params, url, fetch }) {
   const slug: string = params.slug.toLowerCase();
   let concert_info = concerts_metadata.concerts.find((item) => {
     return slug === item.slug;
@@ -37,7 +37,8 @@ export async function load({ params, fetch }) {
         slug: slug,
         concert_info: concert_info,
         video_src: video_src,
-        lyrics_text: lyrics_text
+        lyrics_text: lyrics_text,
+        default_video_src: url.searchParams.get("video"),
       };
     } else {
       throw error(404, "Page Not Found");
