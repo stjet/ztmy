@@ -96,6 +96,11 @@
     scrollbar-width: none;
   }
 
+  /* hide scrollbar for safari/chromium too */
+  #lyrics-container::-webkit-scrollbar {
+    display: none;
+  }
+
   #lyrics-container:first-child {
     padding-top: 0vh !important;
   }
