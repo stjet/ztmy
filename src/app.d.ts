@@ -7,6 +7,7 @@ declare global {
 		// interface PageData {}
 		// interface Platform {}
 	}
+	interface Window { __TAURI__: any; }
 }
 
 export {};

@@ -3,7 +3,8 @@
     "beforeBuildCommand": "npm run build",
     "beforeDevCommand": "npm run dev",
     "devPath": "http://localhost:5173",
-    "distDir": "../build"
+    "distDir": "../build",
+    "withGlobalTauri": true
   },
   "package": {
     "productName": "ztmy",
@@ -12,13 +13,18 @@
   "tauri": {
     "allowlist": {
       "all": false,
-      "fs": {
-        "scope": ["$AUDIO/*"]
+      "protocol": {
+        "asset": true,
+        "assetScope": ["$AUDIO/*"]
+      },
+      "path": {
+        "all": true
       }
     },
     "cli": {
       "subcommands": {
         "concerts": {
+          "description": "",
           "args": [
             {
               "name": "concert",

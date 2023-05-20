@@ -14,13 +14,10 @@ fn main() {
               //`concert` and `song` arguments are required, `video` is not
               if command.name == "concerts" {
                 let concert_arg = command.matches.args.get("concert").unwrap().value.as_str().unwrap();
-                println!("{:?}", command.matches.args.get("video"));
                 if command.matches.args.get("video").unwrap().occurrences == 1 {
-                  println!("a");
                   let video_arg = command.matches.args.get("video").unwrap().value.as_str().unwrap();
                   window.eval(&format!("window.location.replace('/concerts/{}?video={}')", concert_arg, video_arg)).unwrap();
                 } else {
-                  println!("b");
                   window.eval(&format!("window.location.replace('/concerts/{}')", concert_arg)).unwrap();
                 }
               } else if command.name == "songs" {

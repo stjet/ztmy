@@ -46,12 +46,19 @@
     }
   }
 
-  onMount(() => {
+  onMount(async () => {
     //language based on preference
     if (navigator.language.toLowerCase().startsWith("ja")) {
       lang = "jap";
     } else if (navigator.language.toLowerCase().startsWith("en")) {
       lang = "eng";
+    }
+
+    if (window.__TAURI__ && default_video_src) {
+      //is local path
+      if (!default_video_src.startsWith("http")) {
+        video_src = window.__TAURI__.tauri.convertFileSrc(await window.__TAURI__.path.audioDir()+default_video_src);
+      }
     }
   });
 </script>
