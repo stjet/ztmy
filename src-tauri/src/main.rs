@@ -1,10 +1,48 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-use tauri::Manager;
+use tauri::{Manager, CustomMenuItem, Menu, Submenu};
 
 fn main() {
+  //setup menu
+  let pages_submenu = Submenu::new("Pages", 
+    Menu::new()
+      .add_item(CustomMenuItem::new("front".to_string(), "Front"))
+      .add_item(CustomMenuItem::new("songs".to_string(), "Songs"))
+      .add_item(CustomMenuItem::new("subtitles".to_string(), "Subtitles"))
+  );
+  let menu = Menu::new()
+    .add_item(CustomMenuItem::new("back".to_string(), "<- Back"))
+    .add_item(CustomMenuItem::new("forward".to_string(), "Forward ->"))
+    .add_item(CustomMenuItem::new("reload".to_string(), "Reload"))
+    .add_submenu(pages_submenu);
+  //setup builder
   tauri::Builder::default()
+    .menu(menu)
+    .on_menu_event(|event| {
+      let window = event.window();
+      match event.menu_item_id() {
+        "back" => {
+          window.eval("window.history.back()").unwrap();
+        },
+        "forward" => {
+          window.eval("window.history.forward()").unwrap();
+        },
+        "reload" => {
+          window.eval("window.location.reload()").unwrap();
+        },
+        "front" => {
+          window.eval("window.location.replace('/')").unwrap();
+        },
+        "songs" => {
+          window.eval("window.location.replace('/songs')").unwrap();
+        },
+        "subtitles" => {
+          window.eval("window.location.replace('/subtitles')").unwrap();
+        },
+        _ => {}
+      }
+    })
     .setup(|app| {
       let window = app.get_window("main").unwrap();
       match app.get_cli_matches() {
