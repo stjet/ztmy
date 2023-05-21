@@ -1,0 +1,69 @@
+{
+  "title": "Japan Online Festival 2020",
+  "slug": "japan-online-fes-2020",
+  "subtitle": "Rockin'On",
+  "thumbnail_url": "",
+  "description": "",
+  "images": [],
+  "date": "2020/11/07",
+  "sub_src": false,
+  "ytdlp": false,
+  "setlist": [
+    {
+      "jap": "初め",
+      "eng": "Intro",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:00:00", "00:01:06"]
+    },
+    {
+      "jap": "お勉強しといてよ",
+      "eng": "Study Me",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:01:07", "00:05:49"]
+    },
+    {
+      "jap": "低血ボルト",
+      "eng": "Fastening",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:05:50", "00:09:26"]
+    },
+    {
+      "jap": "蹴っ飛ばした毛布",
+      "eng": "Kettobashita Moufu",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:09:27", "00:14:14"]
+    },
+    {
+      "jap": "秒針を噛む",
+      "eng": "Byoushin wo Kamu",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:14:15", "00:19:31"]
+    },
+    {
+      "jap": "ACAねの話",
+      "eng": "ACAね's Talk",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:19:32", "00:20:50"]
+    },
+    {
+      "jap": "暗く黒く",
+      "eng": "Marine Blue Garden",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:20:51", "00:25:34"]
+    },
+    {
+      "jap": "脳裏上のクラッカー",
+      "eng": "Nouriueno Cracker",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:25:35", "00:31:37"]
+    }
+  ]
+}
