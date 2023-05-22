@@ -16,7 +16,6 @@
 
   $: {
     sub_src = URL.createObjectURL(new Blob([subtitles]));
-    console.log(sub_src)
   }
 
   function jump_to() {

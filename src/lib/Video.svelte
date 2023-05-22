@@ -66,7 +66,7 @@
     <!-- svelte-ignore a11y-media-has-caption -->
     <video bind:this={video_ele} on:timeupdate={time_update} src="{ video_src }" controls>
       {#if typeof sub_src === "string"}
-        <track kind="captions" src={sub_src} label="Lyrics">
+        <track kind="captions" src={"/"+sub_src} label="Lyrics">
       {/if}
     </video>
   {:else}
