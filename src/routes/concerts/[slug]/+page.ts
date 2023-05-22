@@ -31,7 +31,8 @@ export async function load({ params, url, fetch }) {
       }
       let lyrics_text: string | boolean = false;
       if (typeof concert_info.sub_src === "string") {
-        lyrics_text = await (await fetch(`/vtt/${slug}.vtt`)).text();
+        //prevents external linking
+        lyrics_text = await (await fetch("/"+concert_info.sub_src)).text();
       }
       return {
         slug: slug,

@@ -44,7 +44,7 @@
 <div class="{ current_song ? 'current-song setitem-container' : 'setitem-container' }">
   <h3>
     {#if typeof youtube == "string"}
-      <a href="{youtube}">{#if lang == "jap"}{ jap }{:else}{ eng }{/if}</a>
+      <a href="{youtube}" target="_blank">{#if lang == "jap"}{ jap }{:else}{ eng }{/if}</a>
     {:else}
       {#if lang == "jap"}{ jap }{:else}{ eng }{/if}
     {/if}

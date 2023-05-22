@@ -73,7 +73,7 @@
 
 <div>
   {#if typeof lyrics === "string"}
-    <div id="lyrics-container" bind:this={lyrics_container_ele} on:scroll={change_mask} style:mask>
+    <div id="lyrics-container" bind:this={lyrics_container_ele} on:scroll={change_mask} style:mask style:-webkit-mask-image={mask}>
       {#each parsed_lyrics as lyric, index}
         <p class="{ index == current_index ? 'current-lyric lyric' : 'lyric'}" title="{deconvert_timestamp(convert_timestamp(lyric.timestamps[0])+offset)} - {deconvert_timestamp(convert_timestamp(lyric.timestamps[1])+offset)}">
           {#if lang === "eng"}

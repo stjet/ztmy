@@ -16,7 +16,6 @@
 
   $: {
     sub_src = URL.createObjectURL(new Blob([subtitles]));
-    console.log(sub_src)
   }
 
   function jump_to() {
@@ -60,6 +59,11 @@
     }
 
     document.getElementById("download-button")?.addEventListener("click", download_file);
+
+    //if browser checks the checkbox by default, probably because it remembers previous state
+    if ((document.getElementById("manual-editing") as HTMLInputElement)?.checked) {
+      textarea.disabled = false;
+    }
   });
 </script>
 

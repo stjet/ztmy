@@ -1,0 +1,48 @@
+{
+  "title": "Spotify \"Go Stream\"",
+  "slug": "spotify-go-stream",
+  "subtitle": "Spotify Japan 5周年",
+  "thumbnail_url": "",
+  "description": "",
+  "images": [],
+  "date": "2022/07/20?",
+  "sub_src": false,
+  "ytdlp": "https://www.youtube.com/watch?v=gWX-RAwBctU",
+  "setlist": [
+    {
+      "jap": "初め",
+      "eng": "Intro",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:00:00", "00:01:06"]
+    },
+    {
+      "jap": "ミラーチューン",
+      "eng": "Mirror Tune",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:01:07", "00:05:22"]
+    },
+    {
+      "jap": "彷徨い酔い温度",
+      "eng": "Samayoi Yoi Ondo",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:05:23", "00:12:27"]
+    },
+    {
+      "jap": "あいつら全員同窓会",
+      "eng": "Inside Joke",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:12:28", "00:16:54"]
+    },
+    {
+      "jap": "今日のバンドメンバー",
+      "eng": "Today's Band Members",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:16:55", "00:17:57"]
+    }
+  ]
+}
