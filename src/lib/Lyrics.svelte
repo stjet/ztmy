@@ -61,9 +61,9 @@
   let mask: string = "linear-gradient(#efefef 35%, #efefef 65%, rgba(255, 255, 255, 0.2))";
 
   function change_mask(_e: Event) {
-    if (lyrics_container_ele.scrollTop < 120) {
+    if (lyrics_container_ele.scrollTop < 100) {
       mask = "linear-gradient(#efefef 35%, #efefef 65%, rgba(255, 255, 255, 0.2))";
-    } else if (lyrics_container_ele.scrollTop > lyrics_container_ele.scrollHeight-lyrics_container_ele.clientHeight-120) {
+    } else if (lyrics_container_ele.scrollTop > lyrics_container_ele.scrollHeight-lyrics_container_ele.clientHeight-100) {
       mask = "linear-gradient(rgba(255, 255, 255, 0.2), #efefef 35%, #efefef 65%)";
     } else {
       mask = "linear-gradient(rgba(255, 255, 255, 0.2), #efefef 35%, #efefef 65%, rgba(255, 255, 255, 0.2))";

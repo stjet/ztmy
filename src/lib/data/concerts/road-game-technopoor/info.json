@@ -1,0 +1,251 @@
+{
+  "title": "ROAD GAME #TECHNOPOOR",
+  "slug": "road-game-technopoor",
+  "subtitle": "叢雲のつるぎ",
+  "thumbnail_url": "",
+  "description": "",
+  "images": [],
+  "date": "2023/01/15",
+  "sub_src": false,
+  "ytdlp": false,
+  "setlist": [
+    {
+      "jap": "初め",
+      "eng": "Intro",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:00:00", "00:01:05"]
+    },
+    {
+      "jap": "三味線・叢雲開幕",
+      "eng": "Shamisen/Murakamo Opening",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:01:06", "00:05:24"]
+    },
+    {
+      "jap": "サターン",
+      "eng": "Saturn",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:05:25", "00:09:17"]
+    },
+    {
+      "jap": "MILABO",
+      "eng": "MILABO",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:09:18", "00:13:50"]
+    },
+    {
+      "jap": "居眠り遠征隊",
+      "eng": "Inemuri Ensetai",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:13:51", "00:16:19"]
+    },
+    {
+      "jap": "お勉強しといてよ",
+      "eng": "Study Me",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:16:20", "00:22:08"]
+    },
+    {
+      "jap": "本日は",
+      "eng": "About Today",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:22:09", "00:26:25"]
+    },
+    {
+      "jap": "猫リセット",
+      "eng": "Neko Reset",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:26:26", "00:33:24"]
+    },
+    {
+      "jap": "勘ぐれい",
+      "eng": "Hunch Gray",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:33:25", "00:37:51"]
+    },
+    {
+      "jap": "秒針を噛む",
+      "eng": "Byoushin wo Kamu",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:37:52", "00:43:19"]
+    },
+    {
+      "jap": "勘冴えて悔しいわ",
+      "eng": "Kansaete Kuyashiiwa",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:43:20", "00:46:41"]
+    },
+    {
+      "jap": "雲丹と栗",
+      "eng": "Uni to Kuri",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:46:42", "00:52:20"]
+    },
+    {
+      "jap": "チャリで来た",
+      "eng": "Came Here on a Bike",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["00:52:21", "00:56:14"]
+    },
+    {
+      "jap": "ばかじゃないのに",
+      "eng": "Stay Foolish",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["00:56:15", "01:01:12"]
+    },
+    {
+      "jap": "Dear Mr 「F」",
+      "eng": "Dear Mr 「F」",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:01:13", "01:08:12"]
+    },
+    {
+      "jap": "ACAねの話1",
+      "eng": "ACAね's Talk 1",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:08:13", "01:14:01"]
+    },
+    {
+      "jap": "夜中のキスミ",
+      "eng": "Kisumi at Midnight",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:14:02", "01:19:50"]
+    },
+    {
+      "jap": "チャリで帰る",
+      "eng": "Return Home by Bike",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:19:51", "01:23:18"]
+    },
+    {
+      "jap": "暗く黒く",
+      "eng": "Darken",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:23:19", "01:28:21"]
+    },
+    {
+      "jap": "脳裏上のクラッカー",
+      "eng": "Nouriueno Cracker",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:28:22", "01:33:12"]
+    },
+    {
+      "jap": "ミラーチューン",
+      "eng": "Mirror Tune",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:33:13", "01:37:40"]
+    },
+    {
+      "jap": "正義",
+      "eng": "Justice",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:37:41", "01:43:19"]
+    },
+    {
+      "jap": "テクノプアとは",
+      "eng": "What Technopoor is",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:43:20", "01:44:21"]
+    },
+    {
+      "jap": "残機",
+      "eng": "Time Left",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:44:22", "01:49:42"]
+    },
+    {
+      "jap": "ENCORE",
+      "eng": "ENCORE",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:49:43", "01:50:50"]
+    },
+    {
+      "jap": "ラストエリクサー",
+      "eng": "Last Elixir",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["01:50:51", "01:52:16"]
+    },
+    {
+      "jap": "胸の煙",
+      "eng": "One's Mind",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:52:17", "01:56:23"]
+    },
+    {
+      "jap": "過眠",
+      "eng": "Hypersomnia",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["01:56:24", "02:00:02"]
+    },
+    {
+      "jap": "Mori Calliope",
+      "eng": "Mori Calliope",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["02:00:03", "02:01:00"]
+    },
+    {
+      "jap": "綺羅キラー (feat. Mori Calliope)",
+      "eng": "Kira Killer",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["02:01:01", "02:05:16"]
+    },
+    {
+      "jap": "うにぐりとACAねの話2",
+      "eng": "Uniguri + ACAね's Talk 2",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["02:05:17", "02:07:23"]
+    },
+    {
+      "jap": "あいつら全員同窓会",
+      "eng": "Inside Joke",
+      "youtube": false,
+      "song": true,
+      "timestamp": ["02:07:24", "02:15:10"]
+    },
+    {
+      "jap": "終わり",
+      "eng": "ENDING",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["02:15:11", "02:16:19"]
+    },
+    {
+      "jap": "今日のバンドメンバー・叢雲終幕",
+      "eng": "Today's Band Members/Murakamo Ending",
+      "youtube": false,
+      "song": false,
+      "timestamp": ["02:16:20", "02:21:35"]
+    }
+  ]
+}

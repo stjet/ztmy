@@ -17,11 +17,6 @@
   const concert_info: ConcertInfo = data.concert_info;
   let video_src: string | boolean = data.video_src;
   const lyrics_text: string | boolean = data.lyrics_text;
-  const default_video_src: string | null = data.default_video_src;
-
-  if (default_video_src) {
-    video_src = default_video_src;
-  }
 
   //variables
   let lang: string = "eng";
@@ -52,6 +47,13 @@
       lang = "jap";
     } else if (navigator.language.toLowerCase().startsWith("en")) {
       lang = "eng";
+    }
+
+    //url params
+    let search_params = new URLSearchParams(window.location.search);
+    let default_video_src: string | null = search_params.get("default_video_src");
+    if (default_video_src) {
+      video_src = default_video_src;
     }
 
     if (window.__TAURI__ && default_video_src) {

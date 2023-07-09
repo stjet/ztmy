@@ -3,6 +3,7 @@
   import { onMount } from 'svelte';
   import Video from '$lib/Video.svelte';
   import LyricInput from '$lib/LyricInput.svelte';
+  import ExtraUtilities from '$lib/ExtraUtilities.svelte';
   import { convert_timestamp } from '$lib/utils.ts';
 
   //manage playing video alongside with example subtitles
@@ -39,6 +40,8 @@
       textarea.disabled = true;
     }
   }
+
+  let util_display: boolean = false;
 
   onMount(() => {
     function copy_file() {
@@ -91,6 +94,11 @@
       <textarea bind:this={textarea} bind:value={subtitles} id="subtitles" disabled></textarea>
       <br>
       <button class="default-button" id="copy-button">Copy</button><button class="default-button" id="download-button">Download</button>
+      <br>
+      <button class="default-button" on:click={() => util_display = util_display ? false : true}>{ util_display ? "Hide Extra Utilities" : "Show Extra Utilities" }</button>
+      <div style:display={util_display ? "block" : "none"}>
+        <ExtraUtilities/>
+      </div>
     </div>
     <div>
       <input bind:value={given_time} type="text" placeholder="01:12:42"/>

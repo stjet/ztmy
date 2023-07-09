@@ -14,6 +14,10 @@ This was made using sveltekit, but it it can be completely prerendered, meaning 
 
 `npm run build` (will build a static version of the site in the `build` directory) or `npm run dev` (run a version of the site locally)
 
+If you want to build the tauri app, switch to the `tauri` branch. Then,
+
+`cargo run build` or `cargo-tauri build`
+
 ## Desktop App
 
 Made with tauri. See the releases (todo: link) to download.
