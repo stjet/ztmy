@@ -46,6 +46,7 @@
     grid-template-columns: auto auto auto;
     column-gap: 5%;
     opacity: 0;
+    padding-bottom: 25px;
     display: none;
   }
 

@@ -367,3 +367,21 @@ export function more_recent_date_string(date1: string, date2: string): boolean {
     return false;
   }
 }
+
+//in format of 00:00:00
+export function add_timestamps(time1: string, time2: string): string {
+  let carry_minute: number = 0;
+  let seconds: number = Number(time1.split(":")[2])+Number(time2.split(":")[2]);
+  if (seconds >= 60) {
+    seconds = seconds - 60;
+    carry_minute++;
+  }
+  let carry_hour: number = 0;
+  let minutes: number = Number(time1.split(":")[1])+Number(time2.split(":")[1])+carry_minute;
+  if (minutes >= 60) {
+    minutes = minutes - 60;
+    carry_hour++;
+  }
+  let hours: number = Number(time1.split(":")[0])+Number(time2.split(":")[0])+carry_hour;
+  return `${String(hours).length === 1 ? `0${hours}` : hours}:${String(minutes).length === 1 ? `0${minutes}` : minutes}:${String(seconds).length === 1 ? `0${seconds}` : seconds}`;
+}
