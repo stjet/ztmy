@@ -16,6 +16,7 @@ vite.config.ts.timestamp-*
 jsconfig.js
 jsconfig.json
 tsconfig.json
-/src/lib/data/video_config.json
 target
 Cargo.lock
+static/*.mp4
+static/videos/*.mp4

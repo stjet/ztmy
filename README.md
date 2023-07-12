@@ -18,6 +18,8 @@ If you want to build the tauri app, switch to the `tauri` branch. Then,
 
 `cargo run build` or `cargo-tauri build`
 
+Also, default video sources can be set in `/src/lib/data/video_config.json`, and when running this locally (and using default video sources), you may want to upload the video files in `/static` as `file://` links likely won't work.
+
 ## Desktop App
 
 Made with tauri. See the releases (todo: link) to download.
