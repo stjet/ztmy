@@ -1,6 +1,6 @@
 <script lang="ts">
   //imports
-  import { lyric_to_html } from '$lib/utils.ts';
+  import { lyric_to_html, normalize_timestamp } from '$lib/utils.ts';
 
   //exports
   export let add_lyric_callback: (start: string, end: string, lyric: string) => void;
@@ -12,6 +12,8 @@
 
   function add_lyric() {
     console.log(lyric)
+    start_timestamp = normalize_timestamp(start_timestamp);
+    end_timestamp = normalize_timestamp(end_timestamp);
     if (lyric.length === 0) return;
     let s_t: string = start_timestamp;
     if (!s_t.includes(".")) {

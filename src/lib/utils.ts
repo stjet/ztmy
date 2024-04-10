@@ -49,15 +49,15 @@ export function deconvert_timestamp(timestamp: number) {
 }
 
 export function lyric_to_html(lyric: string): string {
-  let splitted: string[] = lyric.split("[");
+  let splitted: string[] = lyric.split(/[[｛]/g);
   //trust me typescript, .shift() will not be undefined
   let ly: string = splitted.shift() as string;
   for (let i=0; i < splitted.length; i++) {
-    let kanji_furigana: string = splitted[i].split(")")[0];
-    let kanji: string = kanji_furigana.split("](")[0];
-    let furigana: string = kanji_furigana.split("](")[1];
+    let kanji_furigana: string = splitted[i].split(/[)）]/g)[0].split(/[\]｝][(（]/g);
+    let kanji: string = kanji_furigana[0];
+    let furigana: string = kanji_furigana[1];
     ly += `<ruby>${kanji}<rt>${furigana}</rt></ruby>`;
-    let leftover: string = splitted[i].split(")")[1];
+    let leftover: string = splitted[i].split(/[)）]/g)[1];
     ly += leftover;
   }
   return ly;
@@ -213,7 +213,7 @@ export function hiragana_to_romaji(hiragana: string): string {
   hiragana = katakana_to_hiragana(hiragana);
   //convert hiragana string to romaji
   //hepburn/wapuro table
-  let conversions: {[chars: string]: string} = {
+  const conversions: {[chars: string]: string} = {
     "あ": "a",
     "い": "i",
     "う": "u",
@@ -330,7 +330,7 @@ export function eng_song_to_slug(eng_song: string): string {
     eng_song = eng_song.split("(")[0];
   }
   eng_song = eng_song.toLowerCase().trim();
-  let strip_chars = ["「", "」", "'"];
+  const strip_chars = ["「", "」", "'"];
   for (let i=0; i < strip_chars.length; i++) {
     eng_song = eng_song.replaceAll(strip_chars[i], "");
   }
@@ -384,4 +384,24 @@ export function add_timestamps(time1: string, time2: string): string {
   }
   let hours: number = Number(time1.split(":")[0])+Number(time2.split(":")[0])+carry_hour;
   return `${String(hours).length === 1 ? `0${hours}` : hours}:${String(minutes).length === 1 ? `0${minutes}` : minutes}:${String(seconds).length === 1 ? `0${seconds}` : seconds}`;
+}
+
+export function normalize_timestamp(weird_string: string): string {
+  const fullwidth_numbers_to_regular: {[fullwidth: string]: string} = {
+    "０": "0",
+    "１": "1",
+    "２": "2",
+    "３": "3",
+    "４": "4",
+    "５": "5",
+    "６": "6",
+    "７": "7",
+    "８": "8",
+    "９": "9",
+    "：": ":",
+  };
+  for (let f of Object.keys(fullwidth_numbers_to_regular)) {
+    weird_string = weird_string.replaceAll(f, fullwidth_numbers_to_regular[f]);
+  }
+  return weird_string;
 }

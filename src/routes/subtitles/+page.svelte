@@ -81,6 +81,7 @@
     Enter in start and end timestamp, then put in the Japanese lyrics.
     If any kanji, put that in brackets, and put the hiragana furigana after the kanji in parenthesis.
     Eg: "[水曜日](すいようび)は[明日](あした)"
+    Alternatively, "｛水曜日｝（すいようび）は｛明日｝（あした）" is supported.
     The site can automatically handle Japanese to romaji conversion, so do not worry about that.
     Once you are done, you can either copy the generated <code>.vtt</code> file text, or download the <code>.vtt</code> file.
     Optionally, you can turn on manual editing, paste in the contents of a <code>.vtt</code> file and add to it.
