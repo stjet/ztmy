@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+  import { deconvert_timestamp } from '$lib/utils.ts';
 
   //exports
   export let video_src: string | boolean;
@@ -7,6 +8,7 @@
   export let ytdlp: string | undefined;
   export let time_jump: number;
   export let current_time: number = 0;
+  export let show_timestamp_pause: boolean = false;
 
   //if timestamp (in seconds) changes, video should jump to that point
   //negative timestamp means ignore, do not jump
@@ -49,6 +51,16 @@
     current_time = video_ele.currentTime;
   }
 
+  let pause_timestamp: string | undefined;
+
+  //show the timestamp when paused, if show_timestamp is true
+  function on_pause() {
+    if (show_timestamp_pause) {
+      let secs = Math.round(video_ele.currentTime * 100) / 100;
+      pause_timestamp = deconvert_timestamp(secs);
+    }
+  }
+
   //if browser has input loaded with the video on page load already, load video
   onMount(() => {
     if (video_load_ele?.files) {
@@ -64,11 +76,14 @@
     <button id="use-own-button" class="default-button" on:click={use_own}>Use your own video</button>
     <br>
     <!-- svelte-ignore a11y-media-has-caption -->
-    <video bind:this={video_ele} on:timeupdate={time_update} src="{ video_src }" controls>
+    <video bind:this={video_ele} on:timeupdate={time_update} on:pause={on_pause} src="{ video_src }" controls>
       {#if typeof sub_src === "string"}
         <track kind="captions" src={"/"+sub_src} label="Lyrics" default>
       {/if}
     </video>
+    {#if pause_timestamp}
+      <span>{ pause_timestamp }</span>
+    {/if}
   {:else}
     <p>No video provided for this concert (likely due to copyright and/or bandwidth concerns). Use your own?</p>
     {#if ytdlp}

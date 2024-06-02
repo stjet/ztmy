@@ -105,7 +105,7 @@
       <input bind:value={given_time} type="text" placeholder="01:12:42"/>
       <button class="default-button" on:click={jump_to}>Jump To</button>
       <br>
-      <Video video_src={false} {sub_src} {time_jump} bind:current_time={current_time} ytdlp={undefined}></Video>
+      <Video video_src={false} show_timestamp_pause={true} {sub_src} {time_jump} bind:current_time={current_time} ytdlp={undefined}></Video>
     </div>
   </div>
 </div>
