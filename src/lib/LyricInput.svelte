@@ -10,8 +10,26 @@
   let end_timestamp: string = "";
   let lyric: string = "";
 
+  function kanji_detect() {
+    //4e00 to 9faf
+    const is_kanji = (char) => char.charCodeAt(0) >= 19968 && char.charCodeAt(0) <= 40879;
+    let new_lyric: string = "";
+    let prev_was_kanji: boolean = false;
+    for (const char of lyric.split("")) {
+      if (is_kanji(char)) {
+        if (!prev_was_kanji) new_lyric += "[";
+        prev_was_kanji = true;
+      } else {
+        if (prev_was_kanji) new_lyric += "]()";
+        prev_was_kanji = false;
+      }
+      new_lyric += char;
+    }
+    if (prev_was_kanji) new_lyric += "]()";
+    lyric = new_lyric;
+  }
+
   function add_lyric() {
-    console.log(lyric)
     start_timestamp = normalize_timestamp(start_timestamp);
     end_timestamp = normalize_timestamp(end_timestamp);
     if (lyric.length === 0) return;
@@ -45,6 +63,7 @@
     <input id="lyric" type="text" bind:value={lyric} placeholder="[今日](きょう)も[照](て)らし[続](つづ)けるよ"/>
   </div>
   <button class="default-button" on:click={add_lyric}>Add Lyric</button>
+  <button class="default-button" on:click={kanji_detect}>Kanji Detect</button>
 </div>
 
 <style>
